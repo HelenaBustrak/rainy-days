@@ -2,12 +2,11 @@ body {
     background-color: white;
 }
 
-h1 {
-    color: #245473;
-    background-color: white;
+h1, h2 {
+    color: #0A3641;
 }
 
-h2 {
+h3 {
     color: #245473; 
 }
 
@@ -45,6 +44,11 @@ hr {
     
 }
 
-.Bestsellers {
-    text-decoration: none;
+.name {
+    color: #245473;
 }
+
+.prize {
+    color: #245473;
+}
+
