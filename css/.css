@@ -28,15 +28,16 @@ nav a {
 
 nav a:hover {
     color: white;
-    text-decoration: underline;
+    
 }
 
 .active {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 p {
     color: #245473;
+    background-color: white;
 }
 
