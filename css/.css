@@ -22,11 +22,21 @@ nav li {
 
 nav a {
     color: #0A3641;
+    text-decoration: none;
 
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.active {
+    color: white;
+    text-decoration: none;
 }
 
 p {
     color: #245473;
-    text-decoration: none;
 }
 
