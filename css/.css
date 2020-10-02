@@ -41,7 +41,11 @@ p {
     background-color: white;
 }
 
-h2 + ul {
+ul {
+    background-color:  #245473;
+}
+
+hr {
     background-color:  #245473;
 }
 
