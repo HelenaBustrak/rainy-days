@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: #245473;
+    background-color: white;
+}
+
+h2 {
+    color: #245473; 
+    background-color: white;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #A6937C;
+}
+
