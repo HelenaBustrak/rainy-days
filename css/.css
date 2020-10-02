@@ -9,7 +9,6 @@ h1 {
 
 h2 {
     color: #245473; 
-    background-color: white;
 }
 
 nav {
@@ -41,11 +40,15 @@ p {
     background-color: white;
 }
 
-ul {
+main.ul {
     background-color:  #245473;
 }
 
 hr {
     background-color:  #245473;
+    
 }
 
+h5 {
+    color: 
+}
