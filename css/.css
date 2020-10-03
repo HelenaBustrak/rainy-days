@@ -1,9 +1,9 @@
 
 body {
     background-color: white;
-    font-family: 'trade-gothic-next', sans-serif;
+    font-family: 'tgn-soft-round',sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-weight: 300;
 }
 
 h1, h2 {
