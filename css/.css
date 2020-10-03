@@ -44,12 +44,7 @@ hr {
     
 }
 
-.name {
-    color: #245473;
-    text-decoration: none;
-}
-
-.prize {
+.bestsellers a {
     color: #245473;
 }
 
