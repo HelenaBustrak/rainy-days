@@ -1,13 +1,16 @@
 
 body {
     background-color: white;
-    font-family: 'tgn-soft-round',sans-serif;
+    font-family: 'neue-haas-unica', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h1, h2 {
     color: #0A3641;
+    font-family: tgn-soft-round, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3 {
