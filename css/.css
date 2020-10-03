@@ -49,3 +49,8 @@ hr {
     text-decoration: none;
 }
 
+.bestsellers a:hover {
+    color: #D98E04;
+    text-decoration: underline;
+}
+
