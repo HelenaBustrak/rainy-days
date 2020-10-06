@@ -2,12 +2,6 @@
     max-width: 200px;
 }
 
-header {
-    background-image: url('../images/mountain_hike.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 body {
     background-color: white;
     font-family: 'neue-haas-unica', 'Gill Sans', sans-serif;
@@ -48,6 +42,12 @@ nav a:hover {
 .active {
     color: white;
     text-decoration: underline;
+}
+
+.mountain_image {
+    background-image: url('../images/mountain_hike.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 p {
