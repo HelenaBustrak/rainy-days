@@ -50,7 +50,8 @@ nav a:hover {
     background-image: url('../images/mountain_hike.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 500px;
+    min-height: auto;
+    min-width: auto;
 }
 
 p {
