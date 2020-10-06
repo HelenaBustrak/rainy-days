@@ -48,6 +48,7 @@ nav a:hover {
 
 .mountain_image {
     background-image: url('../images/mountain_hike.jpg');
+    background-repeat: inherit;
     min-height: 500px;
 }
 
