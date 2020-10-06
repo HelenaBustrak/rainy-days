@@ -46,18 +46,17 @@ nav a:hover {
 
 .mountain_image {
     background-image: url('../images/mountain_hike.jpg');
+    min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 p {
     color: #245473;
-    background-color: white;
 }
 
 hr {
-    background-color:  #245473;
-    
+    background-color: #245473;  
 }
 
 .bestsellers {
