@@ -44,12 +44,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
+
 .mountain_image {
     background-image: url('../images/mountain_hike.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 520px;
-
+    min-height: 500px;
 }
 
 p {
