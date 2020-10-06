@@ -54,13 +54,7 @@ hr {
     
 }
 
-.jackets a {
-    color: #245473;
-    text-decoration: none;
-}
-
-.jackets a:hover {
-    color: #D98E04;
-    text-decoration: underline;
+.rainjacket {
+    width: 100%
 }
 
