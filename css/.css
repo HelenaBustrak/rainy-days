@@ -53,6 +53,12 @@ nav a:hover {
     min-height: 500px;
 }
 
+.mountain_image, h1 {
+    background-color: white;
+}
+
+
+
 p {
     color: #245473;
 }
