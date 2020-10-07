@@ -1,5 +1,6 @@
 .logo {
     max-width: 200px;
+    background-color: white;
 }
 
 body {
@@ -44,41 +45,40 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
-
 .mountain_image {
     background-image: url('../images/mountain_hike.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     min-height: 500px;
+    min-width: auto;
+    
 }
 
-.mountain_image, h1, p {
+.mountain_image, h1 {
     background-color: white;
 }
 
-
-
 p {
-    color: #245473;
+    color: #0A3641;
 }
 
 hr {
     background-color: #245473;  
 }
 
-.bestsellers {
-    max-width: 300px;
-    display: inline-block;
+.rainjacket {
+    max-width: 400px;
 }
 
-.rainjacket {
-    max-width: 100%;
+.bestsellers, p {
+    display: inline-block;
 }
 
 .adventure_together {
     background-image: url('../images/couple.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     min-height: 600px;
 }
