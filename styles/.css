@@ -1,3 +1,8 @@
+header {
+    background-color: #A6937C;
+}
+
+
 .logo {
     max-width: 200px;
     background-color: white;
@@ -17,17 +22,19 @@ h1, h2, h3 {
     font-style: normal;
 }
 
-nav {
-    background-color: #A6937C;
+ul {
+    padding: 0px;
 }
 
-nav li {
-    display: inline-block;
+li {
+    display: inline;
 }
 
 nav a {
     color: #0A3641;
     text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
 
 }
 
@@ -40,9 +47,8 @@ nav a:hover {
     
 }
 
-.active {
+.current {
     color: white;
-    text-decoration: underline;
 }
 
 .mountain_image {

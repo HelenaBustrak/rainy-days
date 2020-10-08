@@ -1,0 +1,25 @@
+.step {
+    background-color: #DCD0C1; 
+}
+
+input[type=text] {
+    padding: 5px;
+    width: 700px;
+}
+input[type=tel] {
+    padding: 5px;
+    width: 700px;
+}
+
+input[type=email] {
+    padding: 5px;
+    width: 700px;
+}
+
+.contact_info {
+    display: block; 
+}
+
+.shipping_adress {
+    display: block;
+}

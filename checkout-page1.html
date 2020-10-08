@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
+    <link href="styles/checkout-pages.css" rel="stylesheet">
     <link href="styles/.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-   <header>
-    <img src="images/RainyDays_Logo.png" alt="Rainy Days logo">  
+   <header> 
     <nav>
      <ul>
       <ul>
@@ -31,19 +31,36 @@
     </nav>
    </header>
    <main>
-     <p class="current_page active">1.Shipping</p>
-     <p class="current_page">2.Payment</p>
+     <div class="step">
+      <p class="step 1">1.Shipping</p>
+      <p class="step 2">2.Payment</p>
+     </div>
      <fieldset>
        <legend>Contact Information</legend>
        <label for="email">E-mail</label>
-       <input type="email" name="email" id="email" class="forum__input">
-       <label for="firstname">Firstname</label>
-       <input type="text" name="firstname" id="firstname" class="forum__input">
-       <label for="lastname">Lastname</label>
-       <input type="text" name="lastname" id="lastname" class="forum__input">
+       <input type="email" name="email" id="email" class="contact_info">
+       <label for="fname">Firstname</label>
+       <input type="text" name="fname" id="fname" class="contact_info">
+       <label for="lname">Lastname</label>
+       <input type="text" name="lname" id="lname" class="contact_info">
        <label for="phone">Phone Number</label>
-       <input type="tel" name="phone" id="phone" class="forum__input">
+       <input type="tel" name="phone" id="phone" class="contact_info">
      </fieldset>
+     <fieldset>
+       <legend>Shipping Adress</legend>
+       <label for="adress">Adress</label>
+       <input type="text" name="adress" id="adress" class="shipping_adress">
+       <label for="city">City</label>
+       <input type="text" name="city" id="city" class="shipping_adress">
+       <label for="country_region">Country/Region</label>
+       <input type="text" name="country_region" id="country_region" class="shipping_adress">
+     </fieldset>
+     <fieldset>
+      <legend>Shipping Method</legend>
+      <label for="shipping_method">Standard</label>
+      <input type="radio" name="shipping_method" value="standard">
+      </fieldset>
+     <input type="button" onclick="" value="Continue to payment">
 
     
    </main>

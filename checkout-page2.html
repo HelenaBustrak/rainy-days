@@ -13,18 +13,48 @@
    <header>
     <img src="images/RainyDays_Logo.png" alt="Rainy Days logo">   
     <nav>
-     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="women-jackets.html">Women</a></li>
-      <li><a href="men-jackets.html">Men</a></li>
-      <li><a href="about-us.html">About us</a></li>
-      <li><a href="contact-us.html">Contact us</a></li>
-     </ul> 
+      <ul>
+        <li><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></li>
+        <li><i class="fas fa-home"></i></li>
+        <li><a href="index.html">Home</a></li>
+        <li><i class="fas fa-female"></i></li>
+        <li><a href="women-jackets.html">Women</a></li>
+        <li><i class="fas fa-male"></i></li>
+        <li><a href="men-jackets.html">Men</a></li>
+        <li><i class="fas fa-users"></i></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><i class="far fa-envelope"></i></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+        <li><i class="fas fa-shopping-cart"></i></li>
+       </ul> 
     </nav>
    </header>
    <main>
-    <h1></h1>
-    <p></p>
+    <div class="step">
+      <p class="step 1">1.Shipping</p>
+      <p class="step 2">2.Payment</p>
+    </div>
+    <fieldset>
+     <legend>Card Payment</legend>
+      <label for="shipping_method">Standard</label>
+      <input type="radio" name="shipping_method" value="standard">
+    </fieldset>
+    <fieldset>
+      <legend>Secure Card Payment</legend>
+      <label for="card_number">E-mail</label>
+      <input type="text" name="card" id="caard" class="payment">
+      <label for="fname">Firstname</label>
+      <input type="text" name="fname" id="fname" class="contact_info">
+      <label for="lname">Lastname</label>
+      <input type="text" name="lname" id="lname" class="contact_info">
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" class="contact_info">
+    </fieldset>
+
+
+    <h1>Payment</h1>
+    
+
    </main>
    <footer>
 
