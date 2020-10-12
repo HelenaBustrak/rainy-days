@@ -24,11 +24,9 @@ h1, h2, h3 {
 
 ul {
     padding: 0px;
-}
-
-li {
     display: inline;
 }
+
 
 nav a {
     color: #0A3641;
