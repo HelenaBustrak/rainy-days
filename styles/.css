@@ -1,43 +1,49 @@
-header {
-    background-color: #A6937C;
+html {
+    box-sizing: border-box;
+
 }
-
-
-.logo {
-    max-width: 200px;
-    background-color: white;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
+    margin: 0;
     background-color: white;
     font-family: 'neue-haas-unica', 'Gill Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+header {
+    background-color: #A6937C;
+    height: 110px;
+} 
 
-h1, h2, h3 {
-    color: #0A3641;
-    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.logo {
+    float: left;
+    padding: 2px 20px 0 20px;
+    height: 110px;
+    max-width: 270px;
+    background-color: white;
 }
 
 ul {
-    padding: 0px;
-    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
+li {
+    float: left;
+    margin: 70px 50px 0px 10px
+}
 
-nav a {
-    color: #0A3641;
-    text-decoration: none;
+li a {
+    display: inline-block;
     font-size: 20px;
-    padding: 20px;
-
-}
-
-.fas, .far {
-    color: white;
+    color: #0A3641;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -49,7 +55,21 @@ nav a:hover {
     color: white;
 }
 
-.mountain_image {
+h1, h2, h3 {
+    color: #0A3641;
+    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,.headline-1 {
+    color: #0A3641;
+    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.mountain-image {
     background-image: url('../images/mountain_hike.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,25 +77,38 @@ nav a:hover {
     min-height: 500px;
 }
 
-.mountain_image, h1 {
-    background-color: white;
+.content-first {
+    margin: 0 auto;
+    padding: 300px;
+    padding-top: 100px;
+    text-align: center;
 }
 
 p {
     color: #0A3641;
+    font-family: 'neue-haas-unica', 'Gill Sans', sans-serif;
 }
 
-hr {
-    background-color: #245473;  
+.rainjackets {
+    margin: 0 auto;
 }
 
-.rainjacket {
-    max-width: 400px;
+.rainjacket-card {
+    margin: 50px;
+    border: 1px solid black;
 }
 
-.bestsellers, p {
-    display: inline-block;
+.rainjacket-images {
+    border: 1px solid black;
+
 }
+
+.rainjacket-image {
+    width: 500px;
+    height: 400px;
+}
+
+.rainjacket-info {}
 
 .adventure_together {
     background-image: url('../images/couple.jpg');
