@@ -1,0 +1,8 @@
+.forest_header {
+    border: 1px solid black;
+    max-width: 89%;
+    margin-left: 104px;
+    margin-top: 30px;
+    background-image: url('../images/forest-fog.jpg');
+    background-size: cover;
+}

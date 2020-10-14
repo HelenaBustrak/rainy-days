@@ -84,23 +84,22 @@ h1,.headline-1 {
     text-align: center;
 }
 
-p {
-    color: #0A3641;
-    font-family: 'neue-haas-unica', 'Gill Sans', sans-serif;
+.bestsellers-heading {
+    margin-left: 100px;
+    margin-top: 50px;
 }
-
 .rainjackets {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
 }
 
 .rainjacket-card {
-    margin: 50px;
     border: 1px solid black;
 }
 
 .rainjacket-images {
-    border: 1px solid black;
-
 }
 
 .rainjacket-image {
@@ -110,10 +109,18 @@ p {
 
 .rainjacket-info {}
 
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: #D98E04;
+    border: 0 none;
+}
+
 .adventure_together {
     background-image: url('../images/couple.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 600px;
+    margin: 0;
 }
