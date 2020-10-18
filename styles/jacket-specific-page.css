@@ -1,0 +1,35 @@
+.jacketspec_left {
+    grid-area: 'left';
+}
+
+
+
+main {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto ;
+    grid-template-areas:  
+    'left right'
+    'none right'
+    'bottom bottom';
+    margin: 40px 40px 0 240px;
+    min-width: 960px;
+}
+
+.jacketspec_left, .jacketspec_right, .rainjackets {
+    border: 1px solid black
+}
+.jacketspec {
+    width: 700px;
+    height: 600px;
+}
+.rainjackets {
+    grid-area: 'bottom';
+    grid-column: span 2;
+    margin-top: 100px;
+}
+
+.jacketspec_right {
+    grid-area: 'right';
+    padding-left: 20px;
+}
