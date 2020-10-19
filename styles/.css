@@ -36,52 +36,48 @@ ul {
 
 .leftnav li {
     float: left;
+    margin: 60px 15px 0 15px;
 }
 
 .rightnav li {
     float: right;
+    margin: 60px 15px 0 15px;
 }
 
 li a {
     display: inline-block;
-    font-size: 19px;
+    font-size: 18px;
     color: #0A3641;
     text-align: center;
     text-decoration: none;
-    padding: 15px 20px 5px 15px;
-    margin: 35px 30px 0 30px;
+    padding: 10px;
+    /*padding: 15px 20px 5px 15px;
+    margin: 35px 20px 0 30px;*/
 }
 
 .fas {
-    background-color: #0A3641;
     border: none;
     color: white;
-    width: 45px;
-    padding: 15px;
     margin-right: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 50%;
-    border: 
-    
 }
 
 .searchbar {
     display: inline-block;
-    font-size: 20px;
-    color: #0A3641;
-    text-align: center;
-    text-decoration: none;
-    margin: 59px 50px 30px 40px;
-    padding: 5px;
+    padding: 10px;
+    float: right;
 }
 
-.fa-search {
-    margin-left: 4px;
-    margin-bottom: 23;
+input[type=text] {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #D98E04;
+    font-size: 14px;
+    padding: 4px; 
 }
+
 
 
 nav a:hover {
@@ -100,7 +96,7 @@ nav a:hover {
 h1, h2, h3 {
     color: #0A3641;
     font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -129,6 +125,7 @@ h1, h2, h3 {
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
+    border: 1px solid black;
 }
 
 .mountain-image p {
@@ -150,7 +147,7 @@ h1, h2, h3 {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
     border-radius: 6px;
     margin-top: 30px;
 }
@@ -181,7 +178,7 @@ h1, h2, h3 {
 .rainjacket-info {}
 
 hr {
-    height: 1px;
+    height: 2px;
     width: 100%;
     background-color: #D98E04;
     border: 0 none;
@@ -189,32 +186,48 @@ hr {
 }
 
 /* ----- Third section -----*/
-.adventure_together {
+.shop-for {
     background-image: url('../images/couple.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 600px;
     margin: 0;
-    text-align: center;
 }
 
-.adventure_together {
-    font-size: 30px;
+.content-last {
+    width: 45%;
+    height: 600px;
+    margin: 0 auto 0 auto;
+    padding-top: 250px;
     text-align: center;
-    margin-top: ;
+    border: 1px solid black;
 }
+
+.content-last > h3 {
+    color: white;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 45%;
+    font-size: 40px;
+    text-shadow: 2px 2px 0px #0A3641, 5px 4px 0px rgba(0,0,0,0.15);
+    font-weight: 800;
+
+}
+
 
 .button_blue {
     background-color: #245473;
     border: none;
     color: white;
     font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
+    margin-right: 15px;
+    margin-left: 15px;
     padding: 15px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
     border-radius: 6px;
 }
