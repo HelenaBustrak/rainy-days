@@ -116,7 +116,8 @@ h1, h2, h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 550px;
+    max-height: 550px;
+    width: 100%;
 }
 
 .content-first {
@@ -125,7 +126,6 @@ h1, h2, h3 {
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
-    border: 1px solid black;
 }
 
 .mountain-image p {
