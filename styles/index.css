@@ -569,10 +569,31 @@ h1, h2, h3 {
         height: 250px;
     }
 
+    .content-first {
+        padding-top: 30px;
+    }
+
 
     .headline-1 {
         font-size: 27px;
     }
+
+    .rainjackets  {
+        flex-direction: column;
+    }
+
+    .rainjacket-image {
+        width: 100%;
+        max-height: 300px;
+        height: auto;
+    }
+
+    .rainjacket-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
 
     .main-image p {
         font-size: 10px;
@@ -585,7 +606,7 @@ h1, h2, h3 {
     }
 
     .rainjacket-info h5, .rainjacket-info h6 {
-        font-size: 10px;
+        font-size: 15px;
     
     }
     

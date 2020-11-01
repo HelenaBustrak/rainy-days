@@ -67,6 +67,9 @@ body {
 }
 
 @media (max-width: 695px) {
+    .rainjackets {
+        flex-direction: column;
+    }
     .productpage_heading {
         font-size: 30px;
     }
