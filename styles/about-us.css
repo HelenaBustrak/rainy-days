@@ -76,8 +76,9 @@ font-weight: 700;
 font-style: normal;
 color: #245473;
 font-size: 30px;
-
 }
+
+/*------------------------ Laptop, handheld devices and mobile styles -------------------*/
 @media (max-width: 1063px) {
     .aboutcontent {
         margin-left: 0;

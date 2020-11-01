@@ -3,77 +3,10 @@ main {
     margin: 40px 40px 0 240px;
 }
 
-.top {
-    display: flex;
-    flex-direction: row;
-}
-
-.jacketspec {
-    width: 100%;
-    height: 80%;
-    border: 1px solid #0A3641;
-    margin-right: 40px;
-}
-.rainjackets {
-    margin-top: 0;
-    justify-content: flex-start;
-}
-
-.jacketspec_left {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-right: 50px;
-}
-
-.jacketspec_right {
-    width: 60%;
-    height: 80%;
-}
-
-.rainjacket-images {
-    border: 2px solid #A6937C;
-}
-
-select {
-    appearance: none;
-    outline: 0;
-    width: 50%;
-    height: 100%;
-    padding: 7px;
-    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
-    font-size: 1em;
-    color: #A6937C;
-    cursor: pointer;
-    border: 2px solid #A6937C;
-}
-
-
-.button {
-    display: block;
-}
-
-.fitting-for {
-    display: inline-block;
-}
-
 h4 {
-    display: inline-block;
-    margin:0;
-}
-
-.hiking {
-    margin-right: 2%;
-}
-
- h5 {
-    margin: 0;
-}
-
-.fa-hiking, .fa-campground {
-    color: #A6937C;
-    font-size: 2em;
-    display: inline;
+    margin: 2% 0 10px 0;
+    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-size: 20px;
 }
 
 h1 {
@@ -85,6 +18,195 @@ h1 {
 h2 {
     margin-bottom: 20%;
 }
+
+/*------------------------ Top Section -------------------*/
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.jacketspec {
+    width: 100%;
+    border: 1px solid #0A3641;
+    margin-right: 40px;
+}
+
+
+.jacketspec_left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 3%;
+}
+
+.jacketspec_right {
+    width: 60%;
+    height: 80%;
+}
+
+
+select { 
+    outline: 0;
+    width: 50%;
+    height: 100%;
+    padding: 7px;
+    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-size: 1em;
+    color: #A6937C;
+    cursor: pointer;
+    border: 2px solid #A6937C;
+}
+
+#add-to-cart {
+    display: none;
+}
+.yellow:checked ~ .shopping-cart-dropdown {
+    display: block;
+}
+
+.fitting-for {
+    display: flex;
+    flex-direction: row;
+}
+
+.hiking {
+    margin-right: 5%;
+}
+
+.fa-hiking, .fa-campground {
+    color: #D98E04;
+    font-size: 2em;
+    display: inline;
+}
+/*------------------------ Top section -------------------*/
+
+
+/*------------------------ Other products section -------------------*/
+
+.rainjackets {
+    margin-top: 0;
+    justify-content: flex-start;
+}
+
+.rainjacket-images {
+    border: 2px solid #A6937C;
+}
+
+.other-products-heading {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+    color: #887966;
+}
+
+.fitting-for h5{
+    margin: 0;
+    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+}
+
+/*------------------------ Other products section -------------------*/
+
+ /*------------------------ Laptop and tablet -------------------*/
+@media (max-width: 1063px) {
+    main {
+        margin: 40px 40px 0 100px;
+    }
+
+    
+}
+
+@media (max-width: 890px) {
+    .jacketspec_left {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .rainjacket-info h5 {
+        font-size: 12px;
+    }
+    
+    .rainjacket-info h6 {
+        font-size: 10px;
+    } 
+    
+}
+
+/*------------------------ Laptop and tablet -------------------*/
+
+
+/*------------------------ Mobile -------------------*/
+
+@media (max-width: 630px) {
+    main {
+        margin: 20px;
+    }
+    .jacketspec_left {
+        width: 80%;
+    }
+
+    select {
+        width: 90%;
+        padding: 3px
+    }
+
+    .yellow {
+        width: 80%;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    
+    h1 {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+     h4, .other-products-heading {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .fa-hiking, .fa-campground {
+        font-size: 20px;
+    }
+
+    .other-products-heading  {
+        text-align: center;
+    }
+
+    .rainjackets {
+        text-align: center;
+    }
+
+    .rainjacket-images {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    
+
+}
+
+/*------------------------ Mobile -------------------*/
 
 
 

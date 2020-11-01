@@ -1,3 +1,5 @@
+/*------------------------ Global styles -------------------*/
+
 html {
     box-sizing: border-box;
 
@@ -13,6 +15,45 @@ body {
     font-size: 1em;
     width: 100%;
 }
+
+.button {
+    background-color: #D98E04;
+    border: none;
+    color: white;
+    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 6px;
+}
+
+.yellow:hover {
+    background-color: white;
+    color: #D98E04;
+    border: 2px solid #D98E04;
+    cursor: pointer;
+    transition: 0,4s;
+}
+
+.blue:hover {
+    background-color: white;
+    color: #0A3641;
+    border: 2px solid #0A3641;
+    cursor: pointer;
+    transition: 0,4s;
+}
+
+
+h1, h2, h3 {
+    color: #0A3641;
+    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-style: normal;
+}
+
+/*------------------------ Header styles -------------------*/
 
 header {
     background-color: #A6937C;
@@ -40,6 +81,11 @@ header {
     display: none;
 }
 
+/*------------------------ Header styles end -------------------*/
+
+
+/*------------------------ Navigation styles -------------------*/
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -56,8 +102,6 @@ ul {
     float: right;
     margin: 60px 15px 0 15px;
 }
-
-/* ----- Navigation -----*/
 
 /* -----------------Drop-down shopping cart*-----------------*/
 #shopping-cart {
@@ -168,15 +212,10 @@ nav a:hover {
     color: white;
 }
 
-/* ----- Navigation end-----*/
+/* ----- Navigation styles end -----*/
 
-h1, h2, h3 {
-    color: #0A3641;
-    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
-    font-style: normal;
-}
 
-/* ----- First section -----*/
+/*------------------------ First section -------------------*/
 .headline-1 {
     color: #598FBF;
     font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
@@ -211,37 +250,10 @@ h1, h2, h3 {
     border: 1px solid white;
 }
 
-.button {
-    background-color: #D98E04;
-    border: none;
-    color: white;
-    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
-    padding: 15px 60px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 6px;
-}
+/*------------------------ First section end -------------------*/
 
-.yellow:hover {
-    background-color: white;
-    color: #D98E04;
-    border: 2px solid #D98E04;
-    cursor: pointer;
-    transition: 0,4s;
-}
+/*------------------------ Second section -------------------*/
 
-.blue:hover {
-    background-color: white;
-    color: #0A3641;
-    border: 2px solid #0A3641;
-    cursor: pointer;
-    transition: 0,4s;
-}
-
-/* ----- Second section -----*/
 .bestsellers {
     display: flex;
     flex-direction: column;
@@ -312,8 +324,10 @@ h1, h2, h3 {
     color: #D98E04;
 }
 
+/*------------------------ Second section end -------------------*/
 
-/* ----- Third section -----*/
+
+/*------------------------ Third section -------------------*/
 .shop-for {
     background-image: url('../images/couple.jpg');
     background-size: cover;
@@ -362,7 +376,9 @@ h1, h2, h3 {
     background-color: #245473;
     margin: 0 10px;
 }
-/* ----- Third section -----*/
+/*------------------------ Third section -------------------*/
+
+/*------------------------ Laptop styles -------------------*/
 
 @media (max-width: 1311px) {
     body {
@@ -564,6 +580,8 @@ h1, h2, h3 {
 
 }
 
+/*------------------------ Tablet and mobile styles -------------------*/
+
 @media (max-width: 630px) {
     .main-image {
         height: 250px;
@@ -631,9 +649,6 @@ h1, h2, h3 {
     .shopping-cart-dropdown {
         margin-top: 80px;
     }
-
-
-
 
     .label-shopping-cart {
         margin-top: 39px;

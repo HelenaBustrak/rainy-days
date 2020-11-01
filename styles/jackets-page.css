@@ -32,6 +32,7 @@ body {
     justify-content: space-between;
 
 } 
+/*------------------------ Laptop styles -------------------*/
 
 @media (max-width: 1579px) and (min-width: 1312px) {
     .productpage {
@@ -65,6 +66,8 @@ body {
         margin-right: auto;
     }
 }
+
+/*------------------------ Tablet and mobile styles -------------------*/
 
 @media (max-width: 695px) {
     .rainjackets {

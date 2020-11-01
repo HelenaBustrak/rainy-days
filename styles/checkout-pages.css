@@ -136,6 +136,8 @@ h4 {
     color: #0A3641;
 }
 
+/*------------------------ Laptop styles -------------------*/
+
 @media (max-width: 1396px) {
     .rainjacket-image {
         width: 300px;
@@ -155,6 +157,8 @@ h4 {
         padding-right: 0;
     }
 }
+
+/*------------------------ Tablet and mobile styles -------------------*/
 
 @media (max-width: 640px) {
     .fas {
