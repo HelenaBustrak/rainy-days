@@ -6,60 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
-    <link href="styles/jackets-page.css" rel="stylesheet">
-    <link href="styles/.css" rel="stylesheet"> 
+    <link href="styles/.css" rel="stylesheet">
+    <link href="styles/jackets-page.css" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo">
+      <label class="label-shopping-cart" for="shopping-cart"><i class="fas fa-shopping-cart"></i></label>
+      <input type="checkbox" id="shopping-cart">
+      <div class="shopping-cart-dropdown">
+        <h3>Item(s)</h3>
+        <div class="cart-product">
+         <img src="images/black-rainjacket.jpg" class="rainjacket-image-cart" alt="Black Rainjacket">
+          <h4>Name of product</h4>
+          <h4>Quantity: x</h4>
+        </div>
+          <hr>
+        <div class="cart-prize">
+         <h4>Total:</h4>
+         <h4>x items</h4>
+         <h3>Subtotal</h3>
+         <h3>prize</h3>
+        </div>
+         <hr>
+          <a href="checkout-page1.html" class="button yellow cartbutton">Proceed to Payment</a>
+     </div>
+      <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></a>
+         <img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo-mobile">
       <nav>
        <ul>
-         <li><a href="index.html" class="current">Home</a></li>
-         <li><a href="women-jackets.html">Women</a></li>
-         <li><a href="men-jackets.html">Men</a></li>
-         <li><a href="about-us.html">About us</a></li>
-         <li><a href="contact-us.html">Contact us</a></li>
-         <li><i class="fas fa-shopping-cart"></i></li>
+         <div class="leftnav">
+          <li><a class="active" href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+          <li><a href="women-jackets.html"><i class="fas fa-female"></i>WOMEN</a></li>
+          <li><a href="men-jackets.html"><i class="fas fa-male"></i>MEN</a></li>
+          <li><a href="about-us.html"><i class="fas fa-users"></i>ABOUT US</a></li>
+         </div>
+         <div class=rightnav>
+          <li><a href="contact-us.html"><i class="fas fa-comment-dots"></i>CONTACT US</a></li>
+         <div class="searchbar">
+          <li><input type="text" name="search" placeholder="Search..."> <i class="fas fa-search"></i></li>
+         </div>
+         </div>
        </ul> 
       </nav>
+      </div>
      </header>
    <main>
-     breadcrumbs
+    <section class="productpage">
      <div class="forest_header">
-      <h1>WOMEN</h1>
+      <h1 class="productpage_heading">WOMEN</h1>
      </div>
-
-
-    <section class="rainjackets">
+     <section class="rainjackets row-1">
       <div class="rainjacket-card">
         <div class="rainjacket-images">
-          <img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket">
+          <a href="jacket-specific-page.html"><img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket"></a>
         </div>
         <div class="rainjacket-info">
-          <h5>Black Rainjacket</h5>
-          <h6>$99.99</h6>
+          <a href="jacket-specific-page.html">
+           <h5>Black Rainjacket</h5>
+           <h6>$99.99</h6>
+          </a>
         </div>
       </div>
       <div class="rainjacket-card">
         <div class="rainjacket-images">
-          <img src="images/yellow-rainjacket.jpg" class="rainjacket-image" alt="Yellow Rainjacket">
+          <a href="jacket-specific-page.html"><img src="images/yellow-rainjacket.jpg" class="rainjacket-image" alt="Yellow Rainjacket"></a>
         </div>
         <div class="rainjacket-info">
-          <h5>Yellow Rainjacket</h5>
-          <h6>$99.99</h6>
+          <a href="jacket-specific-page.html">
+            <h5>Yellow Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
         </div>
       </div>
       <div class="rainjacket-card">
         <div class="rainjacket-images">
-          <img src="images/green-rainjacket.jpg" class="rainjacket-image" alt="Green Rainjacket">
+          <a href="jacket-specific-page.html"></a><img src="images/green-rainjacket.jpg" class="rainjacket-image" alt="Green Rainjacket"></a>
         </div>
         <div class="rainjacket-info">
-          <h5>Green Rainjacket</h5>
-          <h6>$99.99</h6>
+          <a href="jacket-specific-page.html">
+            <h5>Green Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
         </div>
       </div>
      </section>
+     <section class="rainjackets row-2">
+      <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"><img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+           <h5>Black Rainjacket</h5>
+           <h6>$99.99</h6>
+          </a>
+        </div>
+      </div>
+      <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"><img src="images/yellow-rainjacket.jpg" class="rainjacket-image" alt="Yellow Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+            <h5>Yellow Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
+        </div>
+      </div>
+      <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"></a><img src="images/green-rainjacket.jpg" class="rainjacket-image" alt="Green Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+            <h5>Green Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
+        </div>
+      </div>
+     </section>
+     <section class="rainjackets row-3">
+      <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"><img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+           <h5>Black Rainjacket</h5>
+           <h6>$99.99</h6>
+          </a>
+        </div>
+      </div>
+      <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"><img src="images/yellow-rainjacket.jpg" class="rainjacket-image" alt="Yellow Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+            <h5>Yellow Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
+        </div>
+      </div>
+      <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"></a><img src="images/green-rainjacket.jpg" class="rainjacket-image" alt="Green Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+            <h5>Green Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
+        </div>
+      </div>
+     </section>
+    </section>
     </div>
    </main>
    <footer>

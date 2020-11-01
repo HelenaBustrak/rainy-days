@@ -10,23 +10,36 @@ body {
     margin: 0;
     background-color: white;
     font-family: 'neue-haas-unica', 'Gill Sans', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1em;
+    width: 100%;
 }
 
 header {
     background-color: #A6937C;
     height: 110px;
+    width: 100%;
 } 
+
+#hamburger-menu {
+    display: none;
+}
+
+.label-hamburger {
+    display: none;
+}
+
 
 .logo {
     float: left;
     padding: 2px 20px 0 20px;
     height: 110px;
-    max-width: 270px;
     background-color: white;
 }
-/* ----- Navigation -----*/
+
+.logo-mobile {
+    display: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -39,20 +52,90 @@ ul {
     margin: 60px 15px 0 15px;
 }
 
-.rightnav li {
+.rightnav li, .label-shopping-cart {
     float: right;
     margin: 60px 15px 0 15px;
 }
 
-li a {
+/* ----- Navigation -----*/
+
+/* -----------------Drop-down shopping cart*-----------------*/
+#shopping-cart {
+    display: none;
+}
+
+.fa-shopping-cart {
+    margin: 0;
+    cursor: pointer;
+}
+.shopping-cart-dropdown {
+    display: none;
+    position: absolute;
+    width: 30%;
+    margin-top: 110px;
+    margin-left: 70%;
+    border: 1px solid #A6937C;
+    background-color: white;
+}
+
+#shopping-cart:checked ~ .shopping-cart-dropdown {
+    display: block;
+
+}
+
+.rainjacket-image-cart {
+    display: block;
+    width: 200px;
+    border: 1px solid #A6937C;
+    float: right;
+    
+}
+
+.shopping-cart-dropdown > h3 {
+    background-color: rgba(166,147,124,0.4);
+    margin: 0;
+    padding: 2%;
+    font-size: 25px;
+}
+
+
+
+.shopping-cart-dropdown hr {
+    height: 1px;
+    border:none;
+    background-color: #A6937C;
+    margin: 2%;
+}
+
+.cart-product, .cart-prize {
+    padding: 2%;
+}
+
+.cart-product {
+    height: 250px;
+}
+
+.cart-prize {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.cartbutton {
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+
+/* -----------------Drop-down shopping cart end*-----------------*/
+
+
+li a, .label-shopping-cart {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1em;
     color: #0A3641;
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    /*padding: 15px 20px 5px 15px;
-    margin: 35px 20px 0 30px;*/
 }
 
 .fas {
@@ -61,24 +144,20 @@ li a {
     margin-right: 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-}
-
-.searchbar {
-    display: inline-block;
-    padding: 10px;
-    float: right;
 }
 
 input[type=text] {
-    width: 300px;
     border-radius: 5px;
-    border: 1px solid #D98E04;
+    border: 1px solid #0A3641;
     font-size: 14px;
     padding: 4px; 
 }
 
-
+.fa-search {
+    color: #0A3641;
+    margin-top: 10px;
+    padding: 4px;
+}
 
 nav a:hover {
     color: white;
@@ -91,54 +170,177 @@ nav a:hover {
 
 /* ----- Navigation end-----*/
 
-
-
 h1, h2, h3 {
     color: #0A3641;
     font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
-    font-weight: 500;
     font-style: normal;
 }
 
 /* ----- First section -----*/
 .headline-1 {
-    color: #0A3641;
+    color: #598FBF;
     font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
     font-weight: 800;
     font-size: 50px;
     padding-top: 40px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 }
 
-.mountain-image {
-    background-image: url('../images/mountain_hike.jpg');
+.main-image {
+    background-image: url('../images/heading-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    max-height: 550px;
     width: 100%;
+    height: 700px;
 }
 
 .content-first {
-    width: 45%;
-    height: 500px;
+    width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 5% 0;
     text-align: center;
 }
 
-.mountain-image p {
-    width: 75%;
-    margin: 0 auto;
+.main-image p {
+    width: 400px;
+    margin: 0 auto 2% auto;
     padding: 20px;
     font-size: 20px;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.7);
     border: 1px solid white;
 }
 
-.button_yellow {
+.button {
     background-color: #D98E04;
+    border: none;
+    color: white;
+    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 6px;
+}
+
+.yellow:hover {
+    background-color: white;
+    color: #D98E04;
+    border: 2px solid #D98E04;
+    cursor: pointer;
+    transition: 0,4s;
+}
+
+.blue:hover {
+    background-color: white;
+    color: #0A3641;
+    border: 2px solid #0A3641;
+    cursor: pointer;
+    transition: 0,4s;
+}
+
+/* ----- Second section -----*/
+.bestsellers {
+    display: flex;
+    flex-direction: column;
+
+}
+.rainjackets  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bestsellers-heading {
+    text-align: center;
+}
+
+.bestsellers-heading h2 {
+    font-weight: 800;
+}
+
+.rainjacket-card {
+    margin: 0 10px;
+}
+
+.rainjacket-images {
+    border: 2px solid #245473;
+}
+
+.rainjacket-images:hover {
+    border: 3px solid #D98E04;
+}
+
+.rainjacket-image {
+    width: 90%;
+    max-height: 400px;
+    height: auto;
+}
+
+.rainjacket-info {
+   width: 100%;
+}
+
+.rainjacket-info a {
+    text-decoration: none;
+}
+
+.rainjacket-info h6, h5 {
+    font-weight: 500;
+    font-style: normal;
+    color: #0A3641;
+}
+
+.rainjacket-info h6 {
+    font-size: 13px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    
+}
+
+.rainjacket-info h5 {
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.rainjacket-info h5:hover {
+    font-weight: 600;
+    color: #D98E04;
+}
+
+
+/* ----- Third section -----*/
+.shop-for {
+    background-image: url('../images/couple.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.content-last {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto 0 auto;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.content-last h3 {
+    color: white;
+    margin: 0 auto 20px auto;
+    font-size: 40px;
+    text-shadow: 2px 2px 0px #0A3641, 5px 4px 0px rgba(0,0,0,0.15);
+    font-weight: 800;
+
+}
+
+
+.button {
     border: none;
     color: white;
     font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
@@ -152,82 +354,290 @@ h1, h2, h3 {
     margin-top: 30px;
 }
 
-/* ----- Second section -----*/
-.bestsellers-heading {
-    margin-left: 100px;
-    margin-top: 50px;
-}
-.rainjackets {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.rainjacket-card {
-}
-
-.rainjacket-images {
-    border: 2px solid #245473;
-}
-
-.rainjacket-image {
-    width: 500px;
-    height: 400px;
-}
-
-.rainjacket-info {}
-
-hr {
-    height: 2px;
-    width: 100%;
+.yellow {
     background-color: #D98E04;
-    border: 0 none;
-    margin-top: 20px;
 }
 
-/* ----- Third section -----*/
-.shop-for {
-    background-image: url('../images/couple.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 600px;
-    margin: 0;
-}
-
-.content-last {
-    width: 45%;
-    height: 600px;
-    margin: 0 auto 0 auto;
-    padding-top: 250px;
-    text-align: center;
-    border: 1px solid black;
-}
-
-.content-last > h3 {
-    color: white;
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 45%;
-    font-size: 40px;
-    text-shadow: 2px 2px 0px #0A3641, 5px 4px 0px rgba(0,0,0,0.15);
-    font-weight: 800;
-
-}
-
-
-.button_blue {
+.blue {
     background-color: #245473;
-    border: none;
-    color: white;
-    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
-    margin-right: 15px;
-    margin-left: 15px;
-    padding: 15px 60px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 6px;
+    margin: 0 10px;
+}
+/* ----- Third section -----*/
+
+@media (max-width: 1311px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 190px;
+    }
+
+    .rightnav li, .label-shopping-cart {
+        margin: 40px 7px 0 5px;
+    }
+
+    .leftnav li {
+        margin: 40px 7px 0 5px;
+    }
+    
+    input[type=text] {
+        font-size: 12px;
+    }
+
+    .shopping-cart-dropdown {
+        margin-top: 80px;
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .rainjacket-image-cart {
+        width: 170px;
+    }
+
+
+    .cartbutton {
+        margin-left: 10%;
+    }
+
+    .main-image {
+        height: 400px;
+    }
+
+    .content-first {
+        height: 400px;
+        padding: 5px 0;
+    }
+
+    .headline-1 {
+        padding-top: 20px;
+    }
+
+    .shop-for {
+        height: 400px;
+    }
+
+    .content-last {
+        height: 400px;
+        padding-top: 140px;
+    }
+}
+
+@media (max-width: 1063px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 120px;
+        background-color: white;
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .logo-mobile {
+        display: inline-block;
+        margin: 0 auto;
+        height: 100px;
+        background-color: white;
+    }
+
+    .rightnav, .leftnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .rightnav {
+        float:left;
+    }
+
+    li .fa-shopping-cart {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        
+    }
+
+    .fa-bars {
+        color: #A6937C;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .label-hamburger {
+        display: block;
+        float: left;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    
+    #hamburger-menu {
+        display: none;
+    }
+    
+    #hamburger-menu:checked ~ nav {
+        display: block;
+        position: absolute;
+        margin-top: 120px;
+        height: 600px;
+        background-color: #A6937C;
+        
+    }
+
+    .shopping-cart-dropdown {
+        margin-top: 120px;
+    }
+
+    .label-shopping-cart {
+        font-size: 30px;
+        order: 3;
+        margin: 73px 20px 0 0;
+        padding: 0;
+
+    }
+
+    .fa-shopping-cart {
+        color: #A6937C;
+        margin: 0;
+    }
+
+    .rainjacket-image-cart {
+        float: left;
+    }
+
+    .cart-product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    
+    .main-image {
+        height: 300px;
+    }
+    
+    .headline-1 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+    
+    .content-first {
+        height: 300px;
+        padding: 0 0;
+    }
+    
+    .main-image p {
+        width: 300px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .button {
+        padding: 10px 30px;
+        font-weight: 500px;
+        font-size: 15px;
+    }
+    
+    .content-last h3 {
+        font-size: 35px;
+    }
+    
+    .content-last {
+        height: 350px;
+        padding-top: 190px;
+    }
+    
+
+
+}
+
+@media (max-width: 630px) {
+    .main-image {
+        height: 250px;
+    }
+
+
+    .headline-1 {
+        font-size: 27px;
+    }
+
+    .main-image p {
+        font-size: 10px;
+        padding: 5px 5px;
+        width: 50%;
+    }
+
+    .bestsellers-heading {
+        font-size: 14px;
+    }
+
+    .rainjacket-info h5, .rainjacket-info h6 {
+        font-size: 10px;
+    
+    }
+    
+
+
+    
+}
+
+@media (max-width:420px) {
+    header {
+        height: 80px;
+    }
+
+    .logo-mobile {
+        height: 70px;
+    }
+
+    #hamburger-menu:checked ~ nav {
+        margin-top: 80px;
+    }
+
+    .shopping-cart-dropdown {
+        margin-top: 80px;
+    }
+
+
+
+
+    .label-shopping-cart {
+        margin-top: 39px;
+    }
+
+    .label-hamburger {
+        margin-top: 56px;
+    }
+
+    .fa-bars, .fa-shopping-cart {
+        font-size: 20px;
+    }
+
+    .headline-1 {
+        font-size: 20px;
+    }
+
+    .main-image p {
+        font-size: 9px;
+    }
+    
+    .bestsellers-heading {
+        font-size: 14px;
+    }
+
+    
+
 }

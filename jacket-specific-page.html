@@ -7,70 +7,102 @@
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
     <link href="styles/jacket-specific-page.css" rel="stylesheet">
-    <link href="styles/.css" rel="stylesheet"> 
+    <link href="styles/.css" rel="stylesheet">
+    <link href="styles/jacket-specific-page.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
   </head>
   <body> 
     <header>
-      <img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo">
-      <nav>
-       <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="women-jackets.html">Women</a></li>
-         <li><a href="men-jackets.html">Men</a></li>
-         <li><a href="about-us.html">About us</a></li>
-         <li><a href="contact-us.html">Contact us</a></li>
-         <li><i class="fas fa-shopping-cart"></i></li>
-       </ul> 
-      </nav>
-     </header>
+      <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></a>
+       <img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo-mobile">
+    <nav>
+     <ul>
+       <div class="leftnav">
+        <li><a class="active" href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+        <li><a href="women-jackets.html"><i class="fas fa-female"></i>WOMEN</a></li>
+        <li><a href="men-jackets.html"><i class="fas fa-male"></i>MEN</a></li>
+        <li><a href="about-us.html"><i class="fas fa-users"></i>ABOUT US</a></li>
+       </div>
+       <div class=rightnav>
+        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+        <li><a href="contact-us.html"><i class="fas fa-comment-dots"></i>CONTACT US</a></li>
+       <div class="searchbar">
+        <li><input type="text" name="search" placeholder="Search..."> <i class="fas fa-search"></i></li>
+       </div>
+       </div>
+     </ul> 
+    </nav>
+   </header>
    <main>
-     <section class="jacketspec_left">
-      <img src="images/black-rainjacket.jpg" alt="Black Rainjacket" class="jacketspec">
-      <h4>Fitting for:</h4>
-      icon
-      icon
-      icon
-     </section>
-     <section class="jacketspec_right">
-      <h1>Name of product</h1>
-      <h2>Prize</h2>
-      Select size
-      Add to cart
-      <h3>description</h3>
-      <p>Mauris luctus tincidunt felis id accumsan. Nunc metus risus, interdum quis tellus et, rutrum vehicula urna. </p>
-     </section>
-    <section class="rainjackets">
-      <div class="rainjacket-card">
-        <div class="rainjacket-images">
-          <img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket">
-        </div>
-        <div class="rainjacket-info">
-          <hr>
-          <h5>Black Rainjacket</h5>
-          <h6>$99.99</h6>
-        </div>
+     <section class="top">
+       <div class="jacketspec_left">
+         <img src="images/black-rainjacket.jpg" alt="Black Rainjacket" class="jacketspec">
+       <div class="fitting for">
+         <h4>Fitting for:</h4>
+        <div class="hiking">
+         <i class="fas fa-hiking"></i>
+         <h5>Hiking</h5>
+       </div>
+      <div class="camping">
+       <i class="fas fa-campground"></i>
+       <h5>Camping</h5>
       </div>
-      <div class="rainjacket-card">
-        <div class="rainjacket-images">
-          <img src="images/yellow-rainjacket.jpg" class="rainjacket-image" alt="Yellow Rainjacket">
+     </div>
+       </div>
+      <div class="jacketspec_right">
+        <h1>Name of product</h1>
+        <h2>Prize</h2>
+        <div class="select-size">
+          <select name="sizes" id="sizes">
+            <option value="no-seize">Select a size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
         </div>
-        <div class="rainjacket-info">
-          <hr>
-          <h5>Yellow Rainjacket</h5>
-          <h6>$99.99</h6>
-        </div>
-        </div>
-      <div class="rainjacket-card">
-        <div class="rainjacket-images">
-          <img src="images/green-rainjacket.jpg" class="rainjacket-image" alt="Green Rainjacket">
-        </div>
-        <div class="rainjacket-info">
-          <hr>
-          <h5>Green Rainjacket</h5>
-          <h6>$99.99</h6>
-        </div>
+        <button class="button yellow">ADD TO CART</button>
+        <h3>description</h3>
+        <p>Mauris luctus tincidunt felis id accumsan. Nunc metus risus, interdum quis tellus et, rutrum vehicula urna. </p>
       </div>
+     </section>
+      <h5>You may also like</h5>
+      <div class="rainjackets">
+       <div class="rainjacket-card">
+         <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"><img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket"></a>
+         </div>
+         <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+           <h5>Black Rainjacket</h5>
+           <h6>$99.99</h6>
+          </a>
+        </div>
+       </div>
+       <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"><img src="images/yellow-rainjacket.jpg" class="rainjacket-image" alt="Yellow Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+            <h5>Yellow Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
+        </div>
+       </div>
+       <div class="rainjacket-card">
+        <div class="rainjacket-images">
+          <a href="jacket-specific-page.html"></a><img src="images/green-rainjacket.jpg" class="rainjacket-image" alt="Green Rainjacket"></a>
+        </div>
+        <div class="rainjacket-info">
+          <a href="jacket-specific-page.html">
+            <h5>Green Rainjacket</h5>
+            <h6>$99.99</h6>
+          </a>
+        </div>
+       </div>
+     </div>
      </section>
    </main>
    <footer>

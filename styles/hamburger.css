@@ -5,6 +5,7 @@ nav {
 #hamburger-menu {
     display: none;
 }
+
 #hamburger-menu:checked ~ nav {
     display: block;
 }

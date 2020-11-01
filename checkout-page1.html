@@ -6,61 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
     <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
-    <link href="styles/checkout-pages.css" rel="stylesheet">
     <link href="styles/.css" rel="stylesheet">
+    <link href="styles/checkout-pages.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-   <header> 
-    <nav>
-     <ul>
-      <ul>
-        <li><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></li>
-        <li><i class="fas fa-home"></i></li>
-        <li><a href="index.html">Home</a></li>
-        <li><i class="fas fa-female"></i></li>
-        <li><a href="women-jackets.html">Women</a></li>
-        <li><i class="fas fa-male"></i></li>
-        <li><a href="men-jackets.html">Men</a></li>
-        <li><i class="fas fa-users"></i></li>
-        <li><a href="about-us.html">About us</a></li>
-        <li><i class="far fa-envelope"></i></li>
-        <li><a href="contact-us.html">Contact us</a></li>
-        <li><i class="fas fa-shopping-cart"></i></li>
-       </ul>  
-    </nav>
-   </header>
-   <main>
-     <div class="step">
-      <p class="step 1">1.Shipping</p>
-      <p class="step 2">2.Payment</p>
+    <header>
+      <label class="label-shopping-cart" for="shopping-cart"><i class="fas fa-shopping-cart"></i></label>
+      <input type="checkbox" id="shopping-cart">
+      <div class="shopping-cart-dropdown">
+        <h3>Item(s)</h3>
+        <div class="cart-product">
+         <img src="images/black-rainjacket.jpg" class="rainjacket-image-cart" alt="Black Rainjacket">
+          <h4>Name of product</h4>
+          <h4>Quantity: x</h4>
+        </div>
+          <hr>
+        <div class="cart-prize">
+         <h4>Total:</h4>
+         <h4>x items</h4>
+         <h3>Subtotal</h3>
+         <h3>prize</h3>
+        </div>
+         <hr>
+          <a href="checkout-page1.html" class="button yellow cartbutton">Proceed to Payment</a>
      </div>
-     <fieldset>
-       <legend>Contact Information</legend>
-       <label for="email">E-mail</label>
-       <input type="email" name="email" id="email" class="contact_info">
-       <label for="fname">Firstname</label>
-       <input type="text" name="fname" id="fname" class="contact_info">
-       <label for="lname">Lastname</label>
-       <input type="text" name="lname" id="lname" class="contact_info">
-       <label for="phone">Phone Number</label>
-       <input type="tel" name="phone" id="phone" class="contact_info">
-     </fieldset>
-     <fieldset>
-       <legend>Shipping Adress</legend>
-       <label for="adress">Adress</label>
-       <input type="text" name="adress" id="adress" class="shipping_adress">
-       <label for="city">City</label>
-       <input type="text" name="city" id="city" class="shipping_adress">
-       <label for="country_region">Country/Region</label>
-       <input type="text" name="country_region" id="country_region" class="shipping_adress">
-     </fieldset>
-     <fieldset>
-      <legend>Shipping Method</legend>
-      <label for="shipping_method">Standard</label>
-      <input type="radio" name="shipping_method" value="standard">
-      </fieldset>
-     <input type="button" onclick="" value="Continue to payment">
+      <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></a>
+         <img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo-mobile">
+      <nav>
+       <ul>
+         <div class="leftnav">
+          <li><a class="active" href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+          <li><a href="women-jackets.html"><i class="fas fa-female"></i>WOMEN</a></li>
+          <li><a href="men-jackets.html"><i class="fas fa-male"></i>MEN</a></li>
+          <li><a href="about-us.html"><i class="fas fa-users"></i>ABOUT US</a></li>
+         </div>
+         <div class=rightnav>
+          <li><a href="contact-us.html"><i class="fas fa-comment-dots"></i>CONTACT US</a></li>
+         <div class="searchbar">
+          <li><input type="text" name="search" placeholder="Search..."> <i class="fas fa-search"></i></li>
+         </div>
+         </div>
+       </ul> 
+      </nav>
+      </div>
+     </header>
+   <main>
+    <section class="left-checkout">
+      <div class="step">
+        <p class="step-1">1.Shipping</p>
+        <p class="step-2">2.Payment</p>
+       </div>
+       <fieldset class="contact-info">
+         <legend><i class="fas fa-user"></i>Contact Information</legend>
+         <label for="email">E-mail</label>
+         <input type="email" name="email" id="email" class="contact_info">
+         <label for="fname">Firstname</label>
+         <input type="text" name="fname" id="fname" class="contact_info">
+         <label for="lname">Lastname</label>
+         <input type="text" name="lname" id="lname" class="contact_info">
+         <label for="phone">Phone Number</label>
+         <input type="tel" name="phone" id="phone" class="contact_info">
+       </fieldset>
+       <fieldset class="shipping-adress">
+         <legend><i class="fas fa-map-marker-alt"></i>Shipping Adress</legend>
+         <label for="adress">Adress</label>
+         <input type="text" name="adress" id="adress" class="shipping_adress">
+         <label for="city">City</label>
+         <input type="text" name="city" id="city" class="shipping_adress">
+         <label for="country_region">Country/Region</label>
+         <input type="text" name="country_region" id="country_region" class="shipping_adress">
+       </fieldset>
+       <fieldset class="shipping-method">
+        <legend><i class="fas fa-shipping-fast"></i>Shipping Method</legend>
+        <label for="shipping_method">Standard</label>
+        <input type="radio" name="shipping_method" value="standard">
+        </fieldset>
+       <input type="button" class="button yellow" onclick="" value="CONTINUE TO PAYMENT">
+    </section>
+    <section class="right-checkout">
+      <h1><i class="fas fa-shopping-cart"></i>Your cart</h1>
+      <div class="rainjacket-images checkout-img">
+        <img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket">
+      </div>
+      <div class="prize">
+        <hr>
+        <div class="add-prizes">
+          <h4>Subtotal</h4>
+          <h4>99.9$</h4>
+          <h4>Shipping</h4>
+          <h4>99.9$</h4>
+        </div>
+        <hr>
+        <div class="total">
+          <h4>Total</h4>
+          <h4>99.9$</h4>
+        </div>
+
+      </div>
+
+    </section>
 
     
    </main>

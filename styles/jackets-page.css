@@ -1,8 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.productpage {
+    width: 85%;
+    margin-left: 235px;
+    
+}
+
 .forest_header {
-    border: 1px solid black;
-    max-width: 89%;
-    margin-left: 104px;
-    margin-top: 30px;
     background-image: url('../images/forest-fog.jpg');
     background-size: cover;
+    margin: 30px 13px 30px 7px;
+    padding-left: 30px;
+}
+
+.productpage_heading {
+    display: inline-block;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 0px #0A3641, 5px 4px 0px rgba(0,0,0,0.15);
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.rainjackets  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+} 
+
+@media (max-width: 1579px) and (min-width: 1312px) {
+    .productpage {
+        width: 82%;
+    }
+
+    .productpage_heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1311px) {
+    .productpage {
+        margin-left: 180px;
+    }
+
+    .productpage_heading {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1231px) {
+    .productpage {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1063px) {
+    .productpage {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 695px) {
+    .productpage_heading {
+        font-size: 30px;
+    }
+
+    .rainjacket-images {
+        border: 1px solid #245473;
+    }
+
+    .rainjacket-info h5 {
+        font-size: 13px;
+    }
+
+    .rainjacket-info h6 {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 481px) {
+    .productpage {
+        width: 90%;
+    }
+    .productpage_heading {
+        font-size: 20px;
+    }
+
+    .rainjacket-info h5 {
+        font-size: 10px;
+    }
+
+    .rainjacket-info h6 {
+        font-size: 9px;
+    }
 }

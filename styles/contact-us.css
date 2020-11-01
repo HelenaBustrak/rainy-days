@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    padding-left: 13%;
+}
+
+.questions, .customer-service, .message-form, .adress{
+    border-left: 2px solid #A6937C;
+    padding-left: 1%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+fieldset input, textarea {
+    display: block;
+    width: 80%;
+
+}
+
+
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    background-color: rgba(166,147,124,0.4);
+    padding: 5px;
+    width: 85%;
+}

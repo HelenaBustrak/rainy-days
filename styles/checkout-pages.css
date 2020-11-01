@@ -1,19 +1,84 @@
+main {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+}
+
+/* -------------------------Left side*----------------*/
+.left-checkout {
+    width: 60%;
+    margin-top: 2%;
+}
+
+
 .step {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1%;
+    padding-left: 10%;
     background-color: #DCD0C1; 
 }
 
-input[type=text] {
-    padding: 5px;
-    width: 700px;
+.step-1 {
+    margin-right: 2%;
+    color: #0A3641;
+    text-decoration: underline;
 }
-input[type=tel] {
+
+.step-2 {
+    color: #a18c73;
+}
+
+.fas {
+    color: white;
+    background-color: #A6937C;
+    font-size: 1em;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+
+
+fieldset {
+    border: none;
+    padding-right: 70px;
+    padding-left: 10%;
+    margin-bottom: 40px;
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+fieldset label {
+    font-size: 14px;
+
+}
+
+
+
+fieldset input[type=text] {
     padding: 5px;
-    width: 700px;
+    width: 90%;
+    border-radius: 0;
+}
+
+input[type=tel] {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #0A3641;
 }
 
 input[type=email] {
+    width: 90%;
     padding: 5px;
-    width: 700px;
+    border: 1px solid #0A3641;
+}
+
+fieldset input:hover {
+    border: 2px solid #0A3641;
+    transition: 0,4;
 }
 
 .contact_info {
@@ -22,4 +87,104 @@ input[type=email] {
 
 .shipping_adress {
     display: block;
+}
+
+.button {
+    margin-left: 10%;
+    width: 80%;
+}
+
+
+
+/* -------------------------Right side*----------------*/
+
+.right-checkout {
+    margin: 2% 0;
+    border-left: solid 2px #a18c73;
+    padding-left: 2%;
+}
+
+.checkout-img {
+    margin-bottom: 20px;
+}
+
+.rainjacket-image {
+    width: 500px;
+}
+.checkout-img:hover {
+    border: 2px solid #245473;
+}
+
+hr {
+    border: none;
+    background-color: #a18c73;
+    height: 1px;
+}
+
+.fa-shopping-cart {
+    padding: 10px;
+}
+
+.add-prizes, .total {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+h4 {
+    font-size: 1em;
+    margin-top: 0;
+    color: #0A3641;
+}
+
+@media (max-width: 1396px) {
+    .rainjacket-image {
+        width: 300px;
+    }
+}
+
+@media (max-width: 856px) {
+    p {
+        font-size: 10px;
+    }
+
+    .rainjacket-image {
+        width: 200px;
+    }
+
+    fieldset {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .fas {
+        font-size: 15px;
+    }
+    .rainjacket-image {
+        width: 150px
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    legend {
+        font-size: 12px;
+    }
+
+
+    h4 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 484px) {
+    .rainjacket-image {
+        width: 120px
+    }
+
+    .fas {
+        font-size: 12px;
+    }
 }
