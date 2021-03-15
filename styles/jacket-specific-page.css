@@ -64,6 +64,13 @@ select {
     display: block;
 }
 
+.SucessMessage {
+    display: none;
+    margin-top: 2px;
+    padding: 4px;
+    color: green;
+}
+
 .fitting-for {
     display: flex;
     flex-direction: row;
