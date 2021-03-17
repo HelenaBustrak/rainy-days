@@ -77,7 +77,7 @@ function validateForm(event) {
         countryError.style.display = "block";
     }
 
-    if(shippingMethod === true) {
+    if(shippingMethod.checked === true) {
         countryError.style.display = "none";
     }
     else {
@@ -99,7 +99,7 @@ city.addEventListener("keyup", checkButton);
 country.addEventListener("keyup", checkButton);
 
 function checkButton() {
-    if (validateEmail(email.value) && checkLength(phoneNumber.value, 8) && checkLength(firstName.value, 2)&& checkLength(lastName.value, 3)&& checkLength(adress.value, 6)&& checkLength(city.value, 3)&& checkLength(country.value, 3)) {
+    if (validateEmail(email.value) && checkLength(phoneNumber.value, 8) && shippingMethod === true) {
         button.disabled = false;
     } else {
         successMessage.innerHTML = "";
