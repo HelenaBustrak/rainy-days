@@ -391,6 +391,12 @@ button:disabled, button:disabled:hover {
     color: rgb(141, 133, 133);
     cursor: default;
 }
+
+.successMessage {
+    color: green;
+    font-size: 25px;
+}
+
 /*------------------------ Laptop styles -------------------*/
 
 @media (max-width: 1311px) {
