@@ -327,6 +327,7 @@ nav a:hover {
 /*------------------------ Second section end -------------------*/
 
 
+
 /*------------------------ Third section -------------------*/
 .shop-for {
     background-image: url('../images/couple.jpg');
@@ -377,7 +378,19 @@ nav a:hover {
     margin: 0 10px;
 }
 /*------------------------ Third section -------------------*/
+/*------------------------ Form  -------------------*/
 
+.form-error {
+    display: none;
+    color: red;
+}
+
+button:disabled, button:disabled:hover {
+    background-color: rgb(180, 177, 177);
+    border: none;
+    color: rgb(141, 133, 133);
+    cursor: default;
+}
 /*------------------------ Laptop styles -------------------*/
 
 @media (max-width: 1311px) {
