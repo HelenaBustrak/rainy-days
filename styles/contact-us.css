@@ -8,12 +8,12 @@
     padding-left: 1%;
 }
 
-fieldset {
+form {
     border: none;
     padding: 0;
 }
 
-fieldset input, textarea {
+form input, textarea {
     display: block;
     width: 80%;
 
