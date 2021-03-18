@@ -13,8 +13,7 @@ const successMessage = document.querySelector(".SucessMessage");
 
 let count = 0;
 
-function validateAddToCart(event) {
-    event.preventDefault();
+function validateAddToCart() {
 
     if (sizes.value === xs ||s || m ||l ||xl) {
         sizeError.style.display = "none";
