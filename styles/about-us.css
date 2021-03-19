@@ -14,13 +14,10 @@ header {
 .aboutcontent {
     display: inline-block;
     margin-top: 4%;
-    margin-left: 4%;
+    margin-left: 8%;
     padding: 20px;
-    width: 850px;
+    width: 550px;
     background-color: rgba(255,255,255,0.6);
-    border: 5px solid  white;
-    height: 70vh;
-    overflow: scroll;
 }
 
 h1 {
@@ -40,72 +37,6 @@ hr {
     background-color: white;
 }
 
-.brand-values {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.adventurous {
-font-family: salamat, sans-serif;
-font-weight: 400;
-font-style: normal;
-color:  #245473;
-font-size: 30px;
-}
-
-.durability {
-font-family: trade-gothic-next, sans-serif;
-font-weight: 800;
-font-style: normal;
-color: #BF6B04;
-font-size: 30px;
-}
-
-.daring {
-font-family: ltc-squareface-sc, serif;
-font-weight: 400;
-font-style: normal;
-color: #D98E04;
-font-size: 30px;
-}
-
-.sustainable {
-font-family: sweet-sans-pro, sans-serif;
-font-weight: 700;
-font-style: normal;
-color: #245473;
-font-size: 30px;
-}
 
 /*------------------------ Laptop, handheld devices and mobile styles -------------------*/
-@media (max-width: 1063px) {
-    .aboutcontent {
-        margin-left: 0;
-    }
 
-    .aboutpage {
-        display: flex;
-        justify-content: center;
-        background-image: url('../images/sunset.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-    }
-}
-
-@media (max-width:1015px) {
-    .aboutcontent {
-        width: 70%;
-        
-    }
-
-    .brand-values {
-        flex-direction: column;
-    }
-
-    .durability {
-        margin-bottom: 12px;
-    }
-}

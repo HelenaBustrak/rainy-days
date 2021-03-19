@@ -44,6 +44,18 @@ h2 {
     height: 80%;
 }
 
+.rainjackets {
+    margin: 0;
+}
+
+.rainjacket-card {
+    margin: 0;
+}
+
+.yellowRainjacket {
+    margin: 0 2%;
+}
+
 
 select { 
     outline: 0;

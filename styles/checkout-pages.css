@@ -77,7 +77,7 @@ input[type=email] {
 }
 
 fieldset input:hover {
-    border: 2px solid #0A3641;
+    border: 1px solid #598FBF;
     transition: 0,4;
 }
 

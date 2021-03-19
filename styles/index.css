@@ -11,23 +11,31 @@ html {
 body {
     margin: 0;
     background-color: white;
-    font-family: 'neue-haas-unica', 'Gill Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
     width: 100%;
 }
 
 .button {
     background-color: #D98E04;
-    border: none;
     color: white;
-    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     padding: 15px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
     border-radius: 6px;
+}
+
+.yellow {
+    border: 2px solid #D98E04;
+}
+.blue {
+    border: 2px solid #0A3641;
+    background-color: #0A3641;
+    margin: 0 10px;
 }
 
 .yellow:hover {
@@ -35,7 +43,7 @@ body {
     color: #D98E04;
     border: 2px solid #D98E04;
     cursor: pointer;
-    transition: 0,4s;
+    transition: 0,6s;
 }
 
 .blue:hover {
@@ -43,20 +51,24 @@ body {
     color: #0A3641;
     border: 2px solid #0A3641;
     cursor: pointer;
-    transition: 0,4s;
+    transition: 0,6s;
 }
 
 
 h1, h2, h3 {
     color: #0A3641;
-    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-style: normal;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 /*------------------------ Header styles -------------------*/
 
 header {
-    background-color: #A6937C;
+    background-color: #819db4;
     height: 110px;
     width: 100%;
 } 
@@ -91,6 +103,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Exo', sans-serif;
 }
 
 .leftnav li {
@@ -108,7 +121,7 @@ ul {
     display: none;
 }
 
-.fa-shopping-cart {
+.fa-shopping-cart, .itemNumber {
     margin: 0;
     cursor: pointer;
 }
@@ -162,6 +175,8 @@ ul {
 .cart-prize {
     display: grid;
     grid-template-columns: 1fr auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .cartbutton {
@@ -175,7 +190,8 @@ ul {
 
 li a, .label-shopping-cart {
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: 600;
     color: #0A3641;
     text-align: center;
     text-decoration: none;
@@ -191,16 +207,21 @@ li a, .label-shopping-cart {
 }
 
 input[type=text] {
-    border-radius: 5px;
-    border: 1px solid #0A3641;
+    border-radius: 5px 0px 0px 5px;
     font-size: 14px;
-    padding: 4px; 
+    padding: 5px; 
+    border: 1px hidden #0A3641;
+}
+
+input[type=text]:hover {
+    border: 1px solid #0A3641;
 }
 
 .fa-search {
-    color: #0A3641;
+    background-color: #0A3641;
     margin-top: 10px;
-    padding: 4px;
+    padding: 6px;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -217,37 +238,41 @@ nav a:hover {
 
 /*------------------------ First section -------------------*/
 .headline-1 {
-    color: #598FBF;
-    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
+    color: white;
+    font-family: 'Exo', sans-serif;
     font-weight: 800;
-    font-size: 50px;
-    padding-top: 40px;
-    letter-spacing: 0.1em;
-    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(92, 92, 92);
+    width: 50%;
+    margin: 100px auto 20px auto;
+    
+    
 }
 
 .main-image {
-    background-image: url('../images/heading-image.jpg');
-    background-size: cover;
+    background-image: url('../images/rainydaysheader.jpg');
+    background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
+    height: 600px;
+    margin-bottom: 2%;
 }
 
 .content-first {
     width: 100%;
     margin: 0 auto;
-    padding: 5% 0;
+    padding: 3% 0;
     text-align: center;
 }
 
 .main-image p {
-    width: 400px;
-    margin: 0 auto 2% auto;
-    padding: 20px;
+    width: 33%;
+    margin: 0 auto 1% auto;
+    padding: 15px 15px;
     font-size: 20px;
-    background-color: rgba(255,255,255,0.7);
-    border: 1px solid white;
+    color: #0A3641;
+    background-color: rgb(221, 221, 221);
 }
 
 /*------------------------ First section end -------------------*/
@@ -271,14 +296,20 @@ nav a:hover {
 
 .bestsellers-heading h2 {
     font-weight: 800;
+    margin-bottom: 0;
+}
+
+.rainjackets {
+    margin: 20px 50px 50px 50px;
 }
 
 .rainjacket-card {
-    margin: 0 10px;
+    margin: 0 30px;
+    flex: 1;
 }
 
 .rainjacket-images {
-    border: 2px solid #245473;
+    border: 2px solid rgb(177, 174, 174);
 }
 
 .rainjacket-images:hover {
@@ -287,7 +318,6 @@ nav a:hover {
 
 .rainjacket-image {
     width: 100%;
-    max-height: 400px;
     height: auto;
 }
 
@@ -314,7 +344,7 @@ nav a:hover {
 
 .rainjacket-info h5 {
     margin-top: 0;
-    font-size: 15px;
+    font-size: 19px;
     margin-bottom: 0;
     padding-top: 5px;
 }
@@ -355,28 +385,13 @@ nav a:hover {
 }
 
 
-.button {
-    border: none;
-    color: white;
-    font-family:'tgn-soft-round', 'Gill Sans', sans-serif;
-    padding: 15px 60px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 6px;
-    margin-top: 30px;
-}
+
 
 .yellow {
     background-color: #D98E04;
 }
 
-.blue {
-    background-color: #245473;
-    margin: 0 10px;
-}
+
 /*------------------------ Third section -------------------*/
 /*------------------------ Form  -------------------*/
 
@@ -626,7 +641,6 @@ button:disabled, button:disabled:hover {
     }
 
     .rainjacket-card {
-        width: 80%;
         margin: 0 auto;
     }
 

@@ -15,28 +15,21 @@ let count = 0;
 
 function validateAddToCart() {
 
-    if (sizes.value === xs ||s || m ||l ||xl) {
-        sizeError.style.display = "none";
-        button.disabled = false;
+    if (sizes.value === "noe-size") {
+        //sizeError.style.display = "block";
+        console.log("Hello");
 
-    } else if (sizes.value === noSizeOption) {
-        sizeError.style.display = "block";
-        button.disabled = true;
-    } 
-        else {
-        sizeError.style.display = "block";
-        button.disabled = true;   
+    }  else {
+        //sizeError.style.display = "none";
+        return true;  
     }
 }
 
-xs.addEventListener("onmouseup", validateAddToCart);
-s.addEventListener("onmouseup", validateAddToCart);
-m.addEventListener("onmouseup", validateAddToCart);
-l.addEventListener("onmouseup", validateAddToCart);
-xl.addEventListener("onmouseup", validateAddToCart);
+
 
 addProductToCart.addEventListener ("click", function () {
 
+    validateAddToCart();
     count++;
 
     itemsInCart.innerHTML = count;
