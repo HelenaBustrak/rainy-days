@@ -23,23 +23,7 @@
   <body>
     <header>
       <label class="label-shopping-cart" for="shopping-cart"><i class="fas fa-shopping-cart"></i></label>
-      <input type="checkbox" id="shopping-cart">
-      <div class="shopping-cart-dropdown">
-        <h3>Item(s)</h3>
-        <div class="cart-product">
-         <img src="images/black-rainjacket.jpg" class="rainjacket-image-cart" alt="Black Rainjacket">
-          <h4>Name of product</h4>
-          <h4>Quantity: x</h4>
-        </div>
-          <hr>
-        <div class="cart-prize">
-         <h4>Total:</h4>
-         <h4>x items</h4>
-         <h3>Subtotal</h3>
-         <h3>prize</h3>
-        </div>
-         <hr>
-          <a href="checkout-page1.html" class="button yellow cartbutton">Proceed to Payment</a>
+      
      </div>
       <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
@@ -48,10 +32,10 @@
       <nav>
        <ul>
          <div class="leftnav">
-          <li><a class="active" href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-          <li><a href="women-jackets.html"><i class="fas fa-female"></i>WOMEN</a></li>
-          <li><a href="men-jackets.html"><i class="fas fa-male"></i>MEN</a></li>
-          <li><a href="about-us.html"><i class="fas fa-users"></i>ABOUT US</a></li>
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="women-jackets.html">WOMEN</a></li>
+          <li><a href="men-jackets.html">MEN</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
          </div>
          <div class=rightnav>
           <li><a href="contact-us.html"><i class="fas fa-comment-dots"></i>CONTACT US</a></li>
@@ -72,7 +56,7 @@
 
        <form class="checkoutForm">
         <fieldset class="contact-info">
-          <legend><i class="fas fa-user"></i>Contact Information</legend>
+          <legend><i class="fas fa-user formIcon"></i>Contact Information</legend>
 
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" class="contact_info">
@@ -92,7 +76,7 @@
         </fieldset>
  
         <fieldset class="shipping-adress">
-          <legend><i class="fas fa-map-marker-alt"></i>Shipping Adress</legend>
+          <legend><i class="fas fa-map-marker-alt formIcon"></i>Shipping Adress</legend>
 
           <label for="adress">Adress</label>
           <input type="text" name="adress" id="adress" class="shipping_adress">
@@ -108,7 +92,7 @@
         </fieldset>
  
         <fieldset class="shipping-method">
-         <legend><i class="fas fa-shipping-fast"></i>Shipping Method</legend>
+         <legend><i class="fas fa-shipping-fast formIcon"></i>Shipping Method</legend>
          <label for="shipping_method">Standard</label>
          <input type="radio" id="shippingMethod" name="shipping_method" value="standard">
          <div class="form-error" id="shippingError">Please enter a country</div>
@@ -119,7 +103,11 @@
 
 
     <section class="right-checkout">
-      <h1><i class="fas fa-shopping-cart"></i>Your cart</h1>
+      <div class="step stepMobile">
+        <p class="step-1">1.Shipping</p>
+        <p class="step-2">2.Payment</p>
+       </div>
+      <h1><i class="fas fa-shopping-cart formIcon"></i>Your cart (1)</h1>
       <div class="rainjacket-images checkout-img">
         <img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket">
       </div>

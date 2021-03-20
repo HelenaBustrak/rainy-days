@@ -102,6 +102,10 @@ select {
     font-size: 2em;
     display: inline;
 }
+
+.cartButton {
+    margin-top: 20px;
+}
 /*------------------------ Top section -------------------*/
 
 
@@ -132,6 +136,12 @@ select {
 
 /*------------------------ Other products section -------------------*/
 
+@media (max-width: 1563px) {
+    .cartButton {
+        font-size: 20px;
+        padding: 13px 50px;
+    }
+}
  /*------------------------ Laptop and tablet -------------------*/
 @media (max-width: 1063px) {
     main {
@@ -142,29 +152,36 @@ select {
 }
 
 @media (max-width: 890px) {
-    .jacketspec_left {
-        width: 60%;
+    .top {
+        display: flex; 
+        flex-direction: column;
     }
 
-    h1 {
-        font-size: 22px;
+    .crumbs {
+        display: block;
+    }
+    .jacketspec_left, .jacketspec_right {
+        width: 100%;
     }
 
-    h2 {
-        font-size: 18px;
+    .fitting-for, h4 {
+        font-size: 14px;
     }
 
-    h3 {
-        font-size: 15px;
+    .fitting-for {
+        margin-bottom: 5px;
     }
 
-    .rainjacket-info h5 {
-        font-size: 12px;
+    h4 {
+        margin-top: 2px;
+        margin-bottom: 0px;
     }
-    
-    .rainjacket-info h6 {
-        font-size: 10px;
-    } 
+
+    .jacketspec {
+        width: 400px;
+        margin-top: 10px;
+    }
+
     
 }
 
@@ -188,25 +205,7 @@ select {
 
     .yellow {
         width: 80%;
-        font-size: 12px;
         padding: 10px;
-    }
-
-    
-    h1 {
-        font-size: 17px;
-    }
-
-    h2 {
-        font-size: 12px;
-    }
-
-     h4, .other-products-heading {
-        font-size: 15px;
-    }
-
-    p {
-        font-size: 12px;
     }
 
     .fa-hiking, .fa-campground {
@@ -225,6 +224,26 @@ select {
         width: 70%;
         margin: 0 auto;
     }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .rainjacket-info h5 {
+        font-size: 12px;
+    }
+    
+    .rainjacket-info h6 {
+        font-size: 10px;
+    } 
 
     
 

@@ -32,6 +32,11 @@ body {
 .yellow {
     border: 2px solid #D98E04;
 }
+
+.content-first .yellow {
+    margin-top: 30px;
+    padding: 15px 50px;
+}
 .blue {
     border: 2px solid #0A3641;
     background-color: #0A3641;
@@ -63,6 +68,25 @@ h1, h2, h3 {
 
 h2 {
     font-size: 30px;
+}
+
+.crumbs a {
+    color: grey;
+
+}
+
+.crumbs span {
+    color: #0A3641;
+    font-weight: 500;
+}
+
+.crumbs a:hover {
+    text-decoration: underline;
+}
+
+.crumbs , .crumbs a {
+    font-size: 20px;
+    text-decoration: none;
 }
 
 /*------------------------ Header styles -------------------*/
@@ -182,6 +206,7 @@ ul {
 .cartbutton {
     margin-left: 20%;
     margin-bottom: 5%;
+    padding: 20px;
 }
 
 
@@ -243,7 +268,6 @@ nav a:hover {
     font-weight: 800;
     font-size: 40px;
     text-shadow: 2px 2px rgb(92, 92, 92);
-    width: 50%;
     margin: 100px auto 20px auto;
     
     
@@ -336,7 +360,7 @@ nav a:hover {
 }
 
 .rainjacket-info h6 {
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 0;
     padding-bottom: 10px;
     
@@ -416,7 +440,7 @@ button:disabled, button:disabled:hover {
 
 @media (max-width: 1311px) {
     body {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     header {
@@ -429,7 +453,7 @@ button:disabled, button:disabled:hover {
     }
 
     .rightnav li, .label-shopping-cart {
-        margin: 40px 7px 0 5px;
+        margin: 40px 9px 0 5px;
     }
 
     .leftnav li {
@@ -452,11 +476,11 @@ button:disabled, button:disabled:hover {
 
 
     .cartbutton {
-        margin-left: 10%;
+        text-align: center;
     }
 
     .main-image {
-        height: 400px;
+        padding: 10px;
     }
 
     .content-first {
@@ -522,7 +546,7 @@ button:disabled, button:disabled:hover {
     }
 
     .fa-bars {
-        color: #A6937C;
+        color: #819db4;
         font-size: 30px;
         cursor: pointer;
     }
@@ -537,18 +561,20 @@ button:disabled, button:disabled:hover {
     #hamburger-menu {
         display: none;
     }
+
+    
     
     #hamburger-menu:checked ~ nav {
         display: block;
         position: absolute;
         margin-top: 120px;
         height: 600px;
-        background-color: #A6937C;
+        background-color: #819db4;
         
     }
 
     .shopping-cart-dropdown {
-        margin-top: 120px;
+        margin-top: 120px; 
     }
 
     .label-shopping-cart {
@@ -560,12 +586,8 @@ button:disabled, button:disabled:hover {
     }
 
     .fa-shopping-cart {
-        color: #A6937C;
+        color: #819db4;
         margin: 0;
-    }
-
-    .rainjacket-image-cart {
-        float: left;
     }
 
     .cart-product {
@@ -599,6 +621,10 @@ button:disabled, button:disabled:hover {
         padding: 10px 30px;
         font-weight: 500px;
         font-size: 15px;
+    }
+
+    .cartbutton {
+        width: auto;
     }
     
     .content-last h3 {
@@ -658,7 +684,10 @@ button:disabled, button:disabled:hover {
 
     .rainjacket-info h5, .rainjacket-info h6 {
         font-size: 15px;
-    
+    }
+
+    .cartbutton {
+        padding: 5px;
     }
     
 
@@ -696,11 +725,11 @@ button:disabled, button:disabled:hover {
     }
 
     .headline-1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .main-image p {
-        font-size: 9px;
+        font-size: 13px;
     }
     
     .bestsellers-heading {
