@@ -59,6 +59,10 @@ body {
 /*------------------------ Tablet and mobile styles -------------------*/
 
 @media (max-width: 730px) {
+
+    .crumbs {
+        margin: 0 auto;
+    }
     .rainjackets {
         flex-direction: column;
     }
@@ -92,9 +96,7 @@ body {
         text-align: center;
         
     }
-    .productpage_heading {
-        font-size: 40px;
-    }
+   
 
 
 }

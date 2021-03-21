@@ -40,3 +40,20 @@ hr {
 
 /*------------------------ Laptop, handheld devices and mobile styles -------------------*/
 
+@media (max-width: 631px) {
+    .aboutcontent {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .aboutpage {
+        height: auto;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    
+}

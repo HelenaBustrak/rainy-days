@@ -1,4 +1,4 @@
-const form = document.querySelector(".messageform");
+const form = document.querySelector(".checkoutForm");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const phoneNumber = document.querySelector("#phone");
@@ -22,6 +22,8 @@ const successMessage = document.querySelector(".successMessage");
 
 function validateForm(event) {
     event.preventDefault();
+
+    console.log("hello");
 
     if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
@@ -77,35 +79,10 @@ function validateForm(event) {
         countryError.style.display = "block";
     }
 
-    if(shippingMethod.checked === true) {
-        countryError.style.display = "none";
-    }
-    else {
-        countryError.style.display = "block";
-    }
-
-    successMessage.innerHTML = "Your message has been sent!";
-
     form.reset();
 
 }
 
-email.addEventListener("keyup", checkButton);
-phoneNumber.addEventListener("keyup", checkButton);
-firstName.addEventListener("keyup", checkButton);
-lastName.addEventListener("keyup", checkButton);
-adress.addEventListener("keyup", checkButton);
-city.addEventListener("keyup", checkButton);
-country.addEventListener("keyup", checkButton);
-
-function checkButton() {
-    if (validateEmail(email.value) && checkLength(phoneNumber.value, 8) && shippingMethod === true) {
-        button.disabled = false;
-    } else {
-        successMessage.innerHTML = "";
-        button.disabled = true;
-    }
-}
 
 form.addEventListener("submit", validateForm);
 

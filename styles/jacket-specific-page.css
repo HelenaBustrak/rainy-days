@@ -88,6 +88,10 @@ select {
     display: none;
 }
 
+.description {
+    max-width: 70%;
+}
+
 .fitting-for {
     display: flex;
     flex-direction: row;

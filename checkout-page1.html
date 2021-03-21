@@ -58,46 +58,53 @@
         <fieldset class="contact-info">
           <legend><i class="fas fa-user formIcon"></i>Contact Information</legend>
 
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" class="contact_info">
-          <div class="form-error" id="emailError">Please enter a valid email address</div>
+          <label for="email">E-mail
+            <input type="email" name="email" id="email" class="contact_info">
+            <div class="form-error" id="emailError">Please enter a valid email address</div>
+          </label>
 
-          <label for="fname">Firstname</label>
-          <input type="text" name="fname" id="fname" class="contact_info">
-          <div class="form-error" id="fnameError">Please enter your firstname</div>
+          <label for="fname">Firstname
+            <input type="text" name="fname" id="fname" class="contact_info">
+            <div class="form-error" id="fnameError">Please enter your firstname</div>
+          </label>
 
-          <label for="lname">Lastname</label>
-          <input type="text" name="lname" id="lname" class="contact_info">
-          <div class="form-error" id="lnameError">Please enter your lastname</div>
+          <label for="lname">Lastname
+            <input type="text" name="lname" id="lname" class="contact_info">
+            <div class="form-error" id="lnameError">Please enter your lastname</div>
+          </label>
 
-          <label for="phone">Phone Number</label>
-          <input type="tel" name="phone" id="phone" class="contact_info">
-          <div class="form-error" id="phoneError">Please enter a valid phone number</div>
+          <label for="phone">Phone Number
+            <input type="tel" name="phone" id="phone" class="contact_info">
+            <div class="form-error" id="phoneError">Please enter a valid phone number</div>
+          </label>
         </fieldset>
  
         <fieldset class="shipping-adress">
           <legend><i class="fas fa-map-marker-alt formIcon"></i>Shipping Adress</legend>
 
-          <label for="adress">Adress</label>
-          <input type="text" name="adress" id="adress" class="shipping_adress">
-          <div class="form-error" id="adressError">Please enter your lastname</div>
+          <label for="adress">Adress
+            <input type="text" name="adress" id="adress" class="shipping_adress">
+            <div class="form-error" id="adressError">Please enter your adress</div>
+          </label>
 
-          <label for="city">City</label>
-          <input type="text" name="city" id="city" class="shipping_adress">
-          <div class="form-error" id="cityError">Please enter a city</div>
+          <label for="city">City
+            <input type="text" name="city" id="city" class="shipping_adress">
+            <div class="form-error" id="cityError">Please enter a city</div>
+          </label>
 
-          <label for="country_region">Country/Region</label>
+          <label for="country_region">Country/Region
           <input type="text" name="country_region" id="country_region" class="shipping_adress">
           <div class="form-error" id="countryError">Please enter a country</div>
+          </label>
         </fieldset>
  
         <fieldset class="shipping-method">
          <legend><i class="fas fa-shipping-fast formIcon"></i>Shipping Method</legend>
          <label for="shipping_method">Standard</label>
-         <input type="radio" id="shippingMethod" name="shipping_method" value="standard">
+         <input type="radio" id="shippingMethod" name="shipping_method" value="standard" checked>
          <div class="form-error" id="shippingError">Please enter a country</div>
          </fieldset>
-         <button class="button yellow formButton" disabled>CONTINUE TO PAYMENT</button>
+         <button class="button yellow formButton">CONTINUE TO PAYMENT</button>
        </form>
     </section>
 
