@@ -36,7 +36,6 @@ function validateForm(event) {
     form.reset();
 
 }
-validateForm();
 
 email.addEventListener("keyup", checkButton);
 phoneNumber.addEventListener("keyup", checkButton);

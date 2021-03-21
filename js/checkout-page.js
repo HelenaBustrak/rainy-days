@@ -23,8 +23,6 @@ const successMessage = document.querySelector(".successMessage");
 function validateForm(event) {
     event.preventDefault();
 
-    console.log("hello");
-
     if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     } else {
@@ -78,8 +76,6 @@ function validateForm(event) {
     else {
         countryError.style.display = "block";
     }
-
-    form.reset();
 
 }
 
