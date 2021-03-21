@@ -77,6 +77,9 @@ function validateForm(event) {
         countryError.style.display = "block";
     }
 
+    successMessage.style.display = "block";
+    successMessage.innerHTML = "Success!";
+
 }
 
 

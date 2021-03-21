@@ -95,6 +95,11 @@ input[type=email] {
     width: 80%;
 }
 
+.successMessage {
+    
+    padding-left: 50%;
+    margin-bottom: 10px;
+}
 
 
 /* -------------------------Right side*----------------*/
