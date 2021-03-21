@@ -522,6 +522,8 @@ button:disabled, button:disabled:hover {
         background-color: white;
     }
 
+    
+
     .rightnav, .leftnav {
         display: flex;
         flex-direction: column;
@@ -583,6 +585,10 @@ button:disabled, button:disabled:hover {
         margin: 73px 20px 0 0;
         padding: 0;
 
+    }
+
+    hr {
+        display: none;
     }
 
     .fa-shopping-cart {
