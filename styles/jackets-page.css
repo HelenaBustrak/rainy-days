@@ -91,11 +91,18 @@ body {
     }
 }
 
+@media (max-width: 525px) {
+    .newCollection {
+        height: 200px;
+    }
+}
+
 @media (max-width: 481px) {
     .productpage {
         text-align: center;
         
     }
+
    
 
 
