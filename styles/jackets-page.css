@@ -27,6 +27,12 @@ body {
     margin-top: 20px;
 }
 
+.rainjackets {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+
 
 /*------------------------ Laptop styles -------------------*/
 
@@ -64,6 +70,7 @@ body {
         margin: 0 auto;
     }
     .rainjackets {
+        display: flex;
         flex-direction: column;
     }
     .productpage_heading, .forest_header {
