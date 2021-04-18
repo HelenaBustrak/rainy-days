@@ -4,6 +4,8 @@ const productCard = document.querySelector(".rainjacket-card");
 const productInfo = document.querySelector(".rainjacket-info");
 
 
+
+
 async function fetchProducts() {
     try {
         const response = await fetch(url);
@@ -20,7 +22,7 @@ async function fetchProducts() {
 
 
             productCards.innerHTML += `<div class="rainjacket-card"><div class="rainjacket-images">
-            <a href="jacket-specific-page.html"><img src="${products[i].images[0].src}" class="rainjacket-image"></a>
+            <a href="jacket-specific-page.html?id=${products[i].id}"><img src="${products[i].images[0].src}" class="rainjacket-image"></a>
            </div>
            <div class="rainjacket-info">
             <a href="jacket-specific-page.html">

@@ -16,10 +16,10 @@ async function fetchProducts() {
 
 
             rainjackets.innerHTML += `<div class="rainjacket-card"><div class="rainjacket-images">
-            <a href="jacket-specific-page.html"><img src="${products[i].images[0].src}" class="rainjacket-image"></a>
+            <a href="jacket-specific-page.html?id=${products[i].id}"><img src="${products[i].images[0].src}" class="rainjacket-image"></a>
            </div>
            <div class="rainjacket-info">
-            <a href="jacket-specific-page.html">
+            <a href="jacket-specific-page.html?id=${products[i].id}">
               <h5>${products[i].name}</h5>
               <h6>${products[i].price_html}</h6>
              </a>
@@ -34,10 +34,10 @@ async function fetchProducts() {
 
 
             rainjackets.innerHTML += `<div class="rainjacket-card"><div class="rainjacket-images">
-            <a href="jacket-specific-page.html"><img src="${products[i].images[0].src}" class="rainjacket-image"></a>
+            <a href="jacket-specific-page.html?id=${products[i].id}"><img src="${products[i].images[0].src}" class="rainjacket-image"></a>
            </div>
            <div class="rainjacket-info">
-            <a href="jacket-specific-page.html">
+            <a href="jacket-specific-page.html?id=${products[i].id}">
               <h5>${products[i].name}</h5>
               <h6>${products[i].price_html}</h6>
              </a>
