@@ -138,6 +138,10 @@ select {
     font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 /*------------------------ Other products section -------------------*/
 
 @media (max-width: 1563px) {

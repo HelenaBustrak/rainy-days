@@ -5,11 +5,12 @@ const productInfo = document.querySelector(".rainjacket-info");
 
 
 
-
 async function fetchProducts() {
     try {
         const response = await fetch(url);
         const products = await response.json();
+
+        productCards.innerHTML = ``
 
         console.log(products);
 

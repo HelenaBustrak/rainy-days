@@ -8,12 +8,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh
+    height: 100vh;
+    padding-top: 40px;
 }
 
 .aboutcontent {
-    display: inline-block;
-    margin-top: 4%;
     margin-left: 8%;
     padding: 20px;
     width: 550px;
@@ -22,13 +21,13 @@ header {
 
 h1 {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     font-size: 2em;
     font-weight: 800;
 }
 
 h2 {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 hr {

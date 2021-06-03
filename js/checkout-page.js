@@ -11,11 +11,12 @@ const adress = document.querySelector("#adress");
 const adressError = document.querySelector("#adressError");
 const city = document.querySelector("#city");
 const cityError = document.querySelector("#cityError");
-const country = document.querySelector("#adress");
+const country = document.querySelector("#country_region");
 const countryError = document.querySelector("#countryError");
 const shippingMethod = document.querySelector("#shippingMethod");
 const shippingMethodError = document.querySelector("#shippingError");
 const button = document.querySelector(".formButton");
+const sucessButton = document.querySelector(".continue");
 const successMessage = document.querySelector(".successMessage");
 
 
@@ -40,13 +41,6 @@ function validateForm(event) {
     }
     else {
         firstNameError.style.display = "block";
-    }
-
-    if(checkLength(lastName.value, 3) === true) {
-        lastNameError.style.display = "none";
-    }
-    else {
-        lastNameError.style.display = "block";
     }
 
     if(checkLength(lastName.value, 3) === true) {
@@ -82,8 +76,25 @@ function validateForm(event) {
 
 }
 
+function checkButton() {
+    if (validateEmail(email.value) && checkLength(phoneNumber.value, 7) && checkLength(firstName.value, 2) && checkLength(lastName.value, 3) && checkLength(adress.value, 6)&& checkLength(city.value, 3) && checkLength(country.value, 4)) {
+        button.style.display = "none";
+        sucessButton.style.display = "block";
+    } else {
+        successMessage.innerHTML = "";
+        button.disabled = true;
+    }
+}
 
-form.addEventListener("submit", validateForm);
+email.addEventListener("keyup", checkButton);
+firstName.addEventListener("keyup", checkButton);
+lastName.addEventListener("keyup", checkButton);
+phoneNumber.addEventListener("keyup", checkButton);
+
+adress.addEventListener("keyup", checkButton);
+city.addEventListener("keyup", checkButton);
+country.addEventListener("keyup", checkButton);
+
 
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
@@ -99,3 +110,5 @@ function checkLength(value, len) {
         return false;
     }
 }
+
+

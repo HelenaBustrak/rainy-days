@@ -1,79 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Checkout Page Step 2</title>
-    <meta name="description" content="This is the checkout page, Step 2.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
-    <link rel="stylesheet" href="https://use.typekit.net/kjk0mgg.css">
-    <link href="styles/.css" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
-    <!-- Hotjar Tracking Code for https://rainy-dayz.netlify.app/checkout-page2.html -->
-    <script>
-      (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2297661,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-       a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-   </script>
-  </head>
-  <body>
-   <header>
-    <img src="images/RainyDays_Logo.png" alt="Rainy Days logo">   
-    <nav>
-      <ul>
-        <li><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></li>
-        <li><i class="fas fa-home"></i></li>
-        <li><a href="index.html">Home</a></li>
-        <li><i class="fas fa-female"></i></li>
-        <li><a href="women-jackets.html">Women</a></li>
-        <li><i class="fas fa-male"></i></li>
-        <li><a href="men-jackets.html">Men</a></li>
-        <li><i class="fas fa-users"></i></li>
-        <li><a href="about-us.html">About us</a></li>
-        <li><i class="far fa-envelope"></i></li>
-        <li><a href="contact-us.html">Contact us</a></li>
-        <li><i class="fas fa-shopping-cart"></i></li>
-       </ul> 
-    </nav>
-   </header>
+  <html>
+    <head>
+      <title>Checkout Page Step 2</title>
+      <meta name="description" content="This is the checkout page, Step 2. ">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link href="styles/index.css" rel="stylesheet">
+      <link href="styles/checkout-pages.css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <label class="label-shopping-cart" for="shopping-cart"><i class="fas fa-shopping-cart"></i></label>
+        
+       </div>
+        <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+          <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo"></a>
+          <a class ="logo-mobile" href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainy Days logo" class="logo-mobile"></a>
+        <nav>
+         <ul>
+           <div class="leftnav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="women-jackets.html">WOMEN</a></li>
+            <li><a href="men-jackets.html">MEN</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+           </div>
+           <div class=rightnav>
+            <li><a href="contact-us.html"><i class="fas fa-comment-dots"></i>CONTACT US</a></li>
+           <div class="searchbar">
+            <li><input type="text" name="search" placeholder="Search..."><i class="fas fa-search"></i></li>
+           </div>
+           </div>
+         </ul> 
+        </nav>
+        </div>
+       </header>
    <main>
-    <div class="step">
-      <p class="step 1">1.Shipping</p>
-      <p class="step 2">2.Payment</p>
-    </div>
-    <fieldset>
-     <legend>Card Payment</legend>
-      <label for="shipping_method">Standard</label>
-      <input type="radio" name="shipping_method" value="standard">
-    </fieldset>
-    <fieldset>
-      <legend>Secure Card Payment</legend>
-      <label for="card_number">E-mail</label>
-      <input type="text" name="card" id="caard" class="payment">
-      <label for="fname">Firstname</label>
-      <input type="text" name="fname" id="fname" class="contact_info">
-      <label for="lname">Lastname</label>
-      <input type="text" name="lname" id="lname" class="contact_info">
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" class="contact_info">
-    </fieldset>
+    <section class="left-checkout">
+      <div class="step">
+        <p class="step-1 unactivePaymentPage">1.Shipping</p>
+        <p class="step-2 activePaymentPage">2.Payment</p>
+       </div>
 
-
-    <h1>Payment</h1>
+      <form class="checkoutForm payment">
+        <fieldset class="paymentMethod">
+          <legend><i class="fas fa-credit-card formIcon"></i>Card Payment</legend>
+          <label for="payment_method">Standard
+            <input type="radio" name="shipping_method" value="standard" checked> <div class="card"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i></div>
+          </label>
+        </fieldset>
+        <fieldset class="paymentDetails">
+          <legend><i class="fas fa-lock formIcon"></i>Secure Card Payment</legend>
+          <label for="cardNumber">Card Number
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="1111-2222-3333-4444" class="payment_details">
+          </label>
+          <label for="expDate">Expiry Date
+            <input type="text" name="expDate" id="expDate" placeholder="01/21" class="payment_details">
+          </label>
+          <label for="cvc">CVC / CVV
+            <input type="text" name="cvc" id="cvc" placeholder="123" class="payment_details">
+          </label>
+          <label for="cardholderName">Cardholder Name
+            <input type="text" name="cardholderName" id="cardholderName" placeholder="John More Doe" class="payment_details">
+          </label>
+        </fieldset>
+        <button class="button yellow formButton disabled completeButton" disabled>CONFIRM AND COMPLETE PURCHASE</button>
+        <a href="completed-purchase.html" class="button yellow formButton continue completeButton">CONFIRM AND COMPLETE PURCHASE</a>
+      </form>
+    </section>
     
 
+    <section class="right-checkout two">
+      <div class="step stepMobile">
+        <p class="step-1 unactivePaymentPage">1.Shipping</p>
+        <p class="step-2 activePaymentPage">2.Payment</p>
+       </div>
+      <h1><i class="fas fa-shopping-cart formIcon"></i>Your cart (1)</h1>
+      <div class="rainjacket-images checkout-img">
+        <img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket">
+      </div>
+      <div class="prize">
+        <hr>
+        <div class="add-prizes">
+          <h4>Subtotal</h4>
+          <h4>99.9$</h4>
+          <h4>Shipping</h4>
+          <h4>99.9$</h4>
+        </div>
+        <hr>
+        <div class="total">
+          <h4>Total</h4>
+          <h4>99.9$</h4>
+        </div>
+      </div>
+    </section>
    </main>
    <footer>
-
-   </footer>
-  
-
-  
+    <h6>Follow us</h6>
+   <div class="socialIcons">
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-instagram"></i>
+     <i class="fab fa-twitter"></i>
+   </div> 
+   <p>Copyright © RainyDays. All rights reserved.</p>
+  </footer>
      
-    
+   <script src="js/checkout-page2.js"></script> 
   </body>
 </html>

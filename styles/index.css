@@ -9,11 +9,29 @@ html {
 }
 
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
     margin: 0;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    width: 100%;
+}
+
+.loader {
+    border: 20px solid #0a364149;
+    border-top: 20px solid #0A3641;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+    margin: 20px auto;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .button {
@@ -48,7 +66,7 @@ body {
     color: #D98E04;
     border: 2px solid #D98E04;
     cursor: pointer;
-    transition: 0,6s;
+    transition: 0.2s;
 }
 
 .blue:hover {
@@ -56,7 +74,7 @@ body {
     color: #0A3641;
     border: 2px solid #0A3641;
     cursor: pointer;
-    transition: 0,6s;
+    transition: 0.2s;
 }
 
 
@@ -82,6 +100,7 @@ h2 {
 
 .crumbs a:hover {
     text-decoration: underline;
+    transition: 0.2s;
 }
 
 .crumbs , .crumbs a {
@@ -234,23 +253,32 @@ li a, .label-shopping-cart {
 input[type=text] {
     border-radius: 5px 0px 0px 5px;
     font-size: 14px;
-    padding: 5px; 
-    border: 1px hidden #0A3641;
+    padding: 8px; 
+    border: 1px hidden;
 }
 
 input[type=text]:hover {
     border: 1px solid #0A3641;
+    transition: 0.2s;
 }
 
 .fa-search {
+    border-radius: 0px 5px 5px 0px;;
     background-color: #0A3641;
-    margin-top: 10px;
-    padding: 6px;
+    font-size: 18px;
+    padding: 6px 8px 9px 7px;
     cursor: pointer;
+}
+
+.fa-search:hover {
+    background-color:#D98E04;
+    color: white;
+    transition: 0.2s;
 }
 
 nav a:hover {
     color: white;
+    transition: 0.2s;
     
 }
 
@@ -258,7 +286,7 @@ nav a:hover {
     color: white;
 }
 
-/* ----- Navigation styles end -----*/
+
 
 
 /*------------------------ First section -------------------*/
@@ -337,7 +365,8 @@ nav a:hover {
 }
 
 .rainjacket-images:hover {
-    border: 3px solid #D98E04;
+    border: 2px solid #D98E04;
+    transition: 0.2s;
 }
 
 .rainjacket-image {
@@ -374,8 +403,8 @@ nav a:hover {
 }
 
 .rainjacket-info h5:hover {
-    font-weight: 600;
     color: #D98E04;
+    transition: 0.2s;
 }
 
 /*------------------------ Second section end -------------------*/
@@ -417,6 +446,42 @@ nav a:hover {
 
 
 /*------------------------ Third section -------------------*/
+
+/*------------------------ Footer -------------------*/
+
+footer {
+    height: 210px;
+    background-color:#0A3641;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+
+}
+
+.fab {
+    display: block;
+    color: white;
+    margin: 0 7px;
+}
+
+h6 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer p {
+    margin-top: 40px;
+    color:#819db4;
+}
 /*------------------------ Form  -------------------*/
 
 .form-error {
@@ -433,7 +498,8 @@ button:disabled, button:disabled:hover {
 
 .successMessage {
     color: green;
-    font-size: 25px;
+    font-size: 20px;
+    display: none;
 }
 
 /*------------------------ Laptop styles -------------------*/
@@ -460,8 +526,12 @@ button:disabled, button:disabled:hover {
         margin: 40px 7px 0 5px;
     }
     
-    input[type=text], .fa-search {
-        font-size: 12px;
+    input[type=text] {
+        font-size: 11px;
+    }
+
+    .fa-search {
+        font-size: 14px;
     }
 
     .shopping-cart-dropdown {
@@ -755,6 +825,16 @@ button:disabled, button:disabled:hover {
         font-size: 14px;
     }
 
-    
+    .socialIcons {
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 17px
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 
 }

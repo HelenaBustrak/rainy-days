@@ -8,17 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <link href="styles/checkout-pages.css" rel="stylesheet">
-    <!-- Hotjar Tracking Code for https://rainy-dayz.netlify.app/checkout-page1.html -->
-    <script>
-      (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2297661,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-       a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-   </script>
   </head>
   <body>
     <header>
@@ -50,8 +39,8 @@
    <main>
     <section class="left-checkout">
       <div class="step">
-        <p class="step-1">1.Shipping</p>
-        <p class="step-2">2.Payment</p>
+        <p class="step-1 activePaymentPage">1.Shipping</p>
+        <p class="step-2 unactivePaymentPage">2.Payment</p>
        </div>
 
        <form class="checkoutForm">
@@ -59,22 +48,22 @@
           <legend><i class="fas fa-user formIcon"></i>Contact Information</legend>
 
           <label for="email">E-mail
-            <input type="email" name="email" id="email" class="contact_info">
+            <input type="email" name="email" id="email" placeholder="john@example.com" class="contact_info">
             <div class="form-error" id="emailError">Please enter a valid email address</div>
           </label>
 
           <label for="fname">Firstname
-            <input type="text" name="fname" id="fname" class="contact_info">
+            <input type="text" name="fname" id="fname" placeholder="John M." class="contact_info">
             <div class="form-error" id="fnameError">Please enter your firstname</div>
           </label>
 
           <label for="lname">Lastname
-            <input type="text" name="lname" id="lname" class="contact_info">
+            <input type="text" name="lname" id="lname" placeholder="Doe" class="contact_info">
             <div class="form-error" id="lnameError">Please enter your lastname</div>
           </label>
 
           <label for="phone">Phone Number
-            <input type="tel" name="phone" id="phone" class="contact_info">
+            <input type="tel" name="phone" id="phone" placeholder="111-1111-1111" class="contact_info">
             <div class="form-error" id="phoneError">Please enter a valid phone number</div>
           </label>
         </fieldset>
@@ -83,17 +72,17 @@
           <legend><i class="fas fa-map-marker-alt formIcon"></i>Shipping Adress</legend>
 
           <label for="adress">Adress
-            <input type="text" name="adress" id="adress" class="shipping_adress">
+            <input type="text" name="adress" id="adress" placeholder="542 W. 15th Street" class="shipping_adress">
             <div class="form-error" id="adressError">Please enter your adress</div>
           </label>
 
           <label for="city">City
-            <input type="text" name="city" id="city" class="shipping_adress">
+            <input type="text" name="city" id="city" placeholder="New York" class="shipping_adress">
             <div class="form-error" id="cityError">Please enter a city</div>
           </label>
 
           <label for="country_region">Country/Region
-          <input type="text" name="country_region" id="country_region" class="shipping_adress">
+          <input type="text" name="country_region" id="country_region" placeholder="United States of America" class="shipping_adress">
           <div class="form-error" id="countryError">Please enter a country</div>
           </label>
         </fieldset>
@@ -105,15 +94,16 @@
          <div class="form-error" id="shippingError">Please enter a country</div>
          </fieldset>
          <div class="successMessage"></div>
-         <button class="button yellow formButton">CONTINUE TO PAYMENT</button>
+         <button class="button yellow formButton disabled" disabled>CONTINUE TO PAYMENT</button>
+         <a href="checkout-page2.html" class="button yellow formButton continue" disabled>CONTINUE TO PAYMENT</a>
        </form>
     </section>
 
 
     <section class="right-checkout">
       <div class="step stepMobile">
-        <p class="step-1">1.Shipping</p>
-        <p class="step-2">2.Payment</p>
+        <p class="step-1 activePaymentPage">1.Shipping</p>
+        <p class="step-2 unactivePaymentPage">2.Payment</p>
        </div>
       <h1><i class="fas fa-shopping-cart formIcon"></i>Your cart (1)</h1>
       <div class="rainjacket-images checkout-img">
@@ -140,9 +130,14 @@
     
    </main>
    <footer>
-
-   </footer>
-  
+    <h6>Follow us</h6>
+   <div class="socialIcons">
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-instagram"></i>
+     <i class="fab fa-twitter"></i>
+   </div> 
+   <p>Copyright © RainyDays. All rights reserved.</p>
+  </footer>
 
   
      

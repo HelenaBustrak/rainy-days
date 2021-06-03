@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rain Jackets for Men</title>
-    <meta name="description" content="List of jackets displaying rain jackets for men.">
+    <title>Completed Purchase</title>
+    <meta name="description" content="You have completed your order.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d59b0ec7f2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
-    <link href="styles/jackets-page.css" rel="stylesheet"> 
+    <link href="styles/completed-purchase.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <label class="label-shopping-cart" for="shopping-cart"><i class="fas fa-shopping-cart"></i></label>
-      <input type="checkbox" id="shopping-cart">
-      <div class="shopping-cart-dropdown">
-        <h3>Item(s)</h3>
-        <div class="cart-product">
-         <img src="images/black-rainjacket.jpg" class="rainjacket-image-cart" alt="Black Rainjacket">
-          <h4>Name of product</h4>
-          <h4>Quantity: x</h4>
-        </div>
-          <hr>
-        <div class="cart-prize">
-         <h4>Total:</h4>
-         <h4>x items</h4>
-         <h3>Subtotal</h3>
-         <h3>prize</h3>
-        </div>
-         <hr>
-          <a href="checkout-page1.html" class="button yellow cartbutton">Proceed to Payment</a>
+      
      </div>
       <label class="label-hamburger" for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
@@ -39,7 +23,7 @@
          <div class="leftnav">
           <li><a href="index.html">HOME</a></li>
           <li><a href="women-jackets.html">WOMEN</a></li>
-          <li><a class="active" href="men-jackets.html">MEN</a></li>
+          <li><a href="men-jackets.html">MEN</a></li>
           <li><a href="about-us.html">ABOUT US</a></li>
          </div>
          <div class=rightnav>
@@ -52,30 +36,34 @@
       </nav>
       </div>
      </header>
-   <main>
-    <section class="productpage">
-      <div class="crumbs"><a href="index.html">Home</a> / <span>Men</span></div>
-     <div class="forest_header">
-      <h1 class="productpage_heading">MEN</h1>
-     </div>
-     
-     <section class="rainjackets">
- 
-     </section>
+     <main>
+         <p class="orderRecieved">Order Recieved</p>
+         <h1><i class="fas fa-check-circle"></i>You have completed your order!</h1>
+         <hr>
+         <div class="productsCheckout">
+            <div class="rainjacket-images checkout-img">
+                <img src="images/black-rainjacket.jpg" class="rainjacket-image" alt="Black Rainjacket">
+              </div>
+              <div class="prizeCheckout">
+                <h3>Product Name</h3>
+                <h4>Prize</h4>
+              </div>
+         </div>
+         <hr>
+         <p>Your order number is: 0000000000000</p>
+         <p>We will email you an confirmation with details and tracking info. </p>
+         <p>Thank you for your purchase!</p>
+         <a href="index.html" class="button blue">CONTINUE SHOPPING</a>
 
-     </section>
-    </section>
-    </div>
-   </main>
-   <footer>
-    <h6>Follow us</h6>
-   <div class="socialIcons">
-     <i class="fab fa-facebook"></i>
-     <i class="fab fa-instagram"></i>
-     <i class="fab fa-twitter"></i>
-   </div> 
-   <p>Copyright © RainyDays. All rights reserved.</p>
-  </footer>
-   <script src="js/products.js"></script> 
-  </body>
-</html>
+     </main>
+     <footer>
+      <h6>Follow us</h6>
+     <div class="socialIcons">
+       <i class="fab fa-facebook"></i>
+       <i class="fab fa-instagram"></i>
+       <i class="fab fa-twitter"></i>
+     </div> 
+     <p>Copyright © RainyDays. All rights reserved.</p>
+    </footer>
+     </body>
+     </html>

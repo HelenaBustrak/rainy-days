@@ -24,7 +24,7 @@ const id = params.get("id");
 
 const url = "https://www.helbus.no/wp-json/wc/store/products/" + id;
 
-productDetailsPage.innerHTML = '<div class="loader"> Loading..</div>'
+productDetailsPage.innerHTML = '<div class="loader"></div>'
 
 fetch(url)
    .then(function(response) {
@@ -34,24 +34,13 @@ fetch(url)
        console.log(product);
        populateCards(product);
    })
-   .then(function(){
+   .then(function() {
     let count = 0;
-
-    function validateAddToCart() {
+    console.log("hello")
     
-        if (sizes.value === "noe-size") {
-            //sizeError.style.display = "block";
-    
-        }  else {
-            //sizeError.style.display = "none";
-            return true;  
-        }
-    }
-    
-    addProductToCart.addEventListener ("click", function () {
-    
-        validateAddToCart();
+    addProductToCart.addEventListener ("click", function() {
         count++;
+        console.log(count);
         quantity.innerHTML = count;
         itemsInCart.innerHTML = count;
         successMessage.style.display = "block";
@@ -66,7 +55,6 @@ fetch(url)
    
 
 function populateCards(product) {
-
 
         productDetailsPage.innerHTML = `
         <div class="jacketspec_left">

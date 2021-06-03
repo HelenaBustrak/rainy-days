@@ -18,7 +18,7 @@ function validateForm(event) {
         emailError.style.display = "block";
     }
 
-    if (checkLength(phoneNumber.value, 8) === true) {
+    if (checkLength(phoneNumber.value, 7) === true) {
         phoneError.style.display = "none";
     } else {
         phoneError.style.display = "block";
@@ -31,23 +31,11 @@ function validateForm(event) {
         messageError.style.display = "block";
     }
 
-    successMessage.innerHTML = "Your message has been sent!";
-
-    form.reset();
-
-}
-
-email.addEventListener("keyup", checkButton);
-phoneNumber.addEventListener("keyup", checkButton);
-message.addEventListener("keyup", checkButton);
-
-function checkButton() {
     if (validateEmail(email.value) && checkLength(phoneNumber.value, 7) && checkLength(message.value, 10)) {
-        button.disabled = false;
-    } else {
-        successMessage.innerHTML = "";
-        button.disabled = true;
+        successMessage.style.display = "block";
+        successMessage.innerHTML = "Your message was sent!"
     }
+
 }
 
 form.addEventListener("submit", validateForm);
