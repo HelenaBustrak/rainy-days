@@ -56,27 +56,21 @@ h2 {
     margin: 0 2%;
 }
 
-
-select { 
-    outline: 0;
-    width: 50%;
-    height: 100%;
-    padding: 7px;
-    font-family: 'tgn-soft-round', 'Gill Sans', sans-serif;
-    font-size: 1em;
-    color: #A6937C;
-    cursor: pointer;
-    border: 2px solid #A6937C;
+label {
+    font-size: 20px;
+    margin-right: 20px;
 }
+
 
 #add-to-cart {
     display: none;
 }
+
 .yellow:checked ~ .shopping-cart-dropdown {
     display: block;
 }
 
-.SucessMessage {
+.sucessMessage {
     display: none;
     margin-top: 2px;
     padding: 4px;
@@ -109,6 +103,10 @@ select {
 
 .cartButton {
     margin-top: 20px;
+}
+
+.select-style p {
+    max-width: 900px;
 }
 /*------------------------ Top section -------------------*/
 
@@ -204,11 +202,6 @@ footer {
     }
     .jacketspec_left {
         width: 80%;
-    }
-
-    select {
-        width: 90%;
-        padding: 3px
     }
 
     .yellow {

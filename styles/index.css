@@ -168,6 +168,10 @@ ul {
     margin: 0;
     cursor: pointer;
 }
+
+.itemNumber {
+    font-size: 20px;
+}
 .shopping-cart-dropdown {
     display: none;
     position: absolute;

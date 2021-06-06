@@ -44,6 +44,10 @@ hr {
     margin-right: 20px;
 }
 
+.blue {
+    margin-top: 50px;
+}
+
 @media (max-width: 1311px) {
     .orderRecieved  {
         top: 185px;
