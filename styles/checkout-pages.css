@@ -32,6 +32,10 @@ main {
     text-decoration: underline;
 }
 
+.fa-arrow-left {
+    color: #0A3641;
+}
+
 .formIcon {
     color: white;
     background-color: #A6937C;
@@ -39,6 +43,8 @@ main {
     padding: 7px;
     border-radius: 50%;
 }
+
+
 
 .card {
     display: inline;
@@ -61,7 +67,6 @@ fieldset label {
     font-size: 14px;
 
 }
-
 
 
 fieldset input[type=text] {
@@ -147,13 +152,14 @@ input[type=email] {
 
 .checkout-img {
     margin-bottom: 20px;
+    
 }
 
 .rainjacket-image {
     width: 500px;
 }
 .checkout-img:hover {
-    border: 2px solid #245473;
+    border: solid 2px rgb(177, 174, 174)
 }
 
 hr {
