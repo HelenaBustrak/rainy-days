@@ -1,1 +1,1 @@
-# Rainy-Dayz-
+# rainy-dayz
